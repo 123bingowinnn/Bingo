@@ -1,0 +1,43 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#F5F9FF"/>
+  <rect x="56" y="56" width="1088" height="608" rx="40" fill="url(#bg)"/>
+  <circle cx="1024" cy="128" r="112" fill="#D9ECFF" fill-opacity="0.8"/>
+  <circle cx="164" cy="590" r="150" fill="#DDF7F1" fill-opacity="0.9"/>
+  <rect x="112" y="116" width="452" height="488" rx="34" fill="#FFFFFF" stroke="#D6E4F5" stroke-width="10"/>
+  <rect x="150" y="164" width="376" height="18" rx="9" fill="#E8F1FB"/>
+  <rect x="150" y="304" width="376" height="18" rx="9" fill="#E8F1FB"/>
+  <rect x="150" y="444" width="376" height="18" rx="9" fill="#E8F1FB"/>
+  <rect x="214" y="194" width="248" height="86" rx="20" fill="#E7F7EF"/>
+  <ellipse cx="272" cy="237" rx="34" ry="40" fill="#7FD38B"/>
+  <rect x="262" y="200" width="20" height="24" rx="10" fill="#55B86C"/>
+  <circle cx="372" cy="236" r="36" fill="#FF735C"/>
+  <path d="M371 195C387 215 408 225 408 241C408 262 391 279 371 279C351 279 334 262 334 241C334 225 355 215 371 195Z" fill="#FF8A70"/>
+  <rect x="236" y="334" width="206" height="84" rx="20" fill="#FFF4D9"/>
+  <circle cx="286" cy="376" r="28" fill="#FFD45A"/>
+  <circle cx="364" cy="376" r="28" fill="#FFB84D"/>
+  <rect x="236" y="474" width="206" height="84" rx="20" fill="#EAF1FF"/>
+  <rect x="262" y="492" width="42" height="42" rx="12" fill="#8CB8FF"/>
+  <rect x="322" y="492" width="42" height="42" rx="12" fill="#68D4C3"/>
+  <rect x="382" y="492" width="42" height="42" rx="12" fill="#A39BFF"/>
+  <rect x="620" y="146" width="472" height="428" rx="36" fill="#FFFFFF" stroke="#D6E4F5" stroke-width="8"/>
+  <rect x="662" y="192" width="388" height="54" rx="18" fill="#F1F7FF"/>
+  <rect x="662" y="268" width="244" height="22" rx="11" fill="#D9E8FB"/>
+  <rect x="662" y="308" width="180" height="22" rx="11" fill="#D9E8FB"/>
+  <rect x="662" y="364" width="390" height="136" rx="26" fill="#F8FBFF"/>
+  <rect x="690" y="396" width="230" height="28" rx="14" fill="#BFD5F2"/>
+  <rect x="690" y="438" width="330" height="18" rx="9" fill="#D9E8FB"/>
+  <rect x="690" y="468" width="276" height="18" rx="9" fill="#D9E8FB"/>
+  <circle cx="994" cy="219" r="18" fill="#65D6C2"/>
+  <path d="M989 219L993 223L1001 213" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="92" y="82" width="164" height="44" rx="22" fill="#DFF4EE"/>
+  <text x="124" y="111" fill="#159A7A" font-family="Arial, sans-serif" font-size="24" font-weight="700">Fridge Clear</text>
+  <text x="620" y="112" fill="#173A63" font-family="Arial, sans-serif" font-size="54" font-weight="700">冰箱里面有什么</text>
+  <text x="620" y="612" fill="#5F7691" font-family="Arial, sans-serif" font-size="28">减少食物浪费 · 节省开支 · 科学管理保质期</text>
+  <defs>
+    <linearGradient id="bg" x1="56" y1="56" x2="1144" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="0.55" stop-color="#EEF6FF"/>
+      <stop offset="1" stop-color="#F7FFFC"/>
+    </linearGradient>
+  </defs>
+</svg>

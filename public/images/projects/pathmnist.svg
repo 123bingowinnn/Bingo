@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1025"/>
+      <stop offset="100%" style="stop-color:#0d0a12"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c084fc;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#818cf8;stop-opacity:0.3"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="40%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="70%" cy="60%">
+      <stop offset="0%" style="stop-color:#f0abfc;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#f0abfc;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <rect width="800" height="400" fill="url(#glow1)"/>
+  <rect width="800" height="400" fill="url(#glow2)"/>
+  <!-- Grid pattern representing medical image patches -->
+  <g opacity="0.12" stroke="#c084fc" stroke-width="0.5" fill="none">
+    <rect x="160" y="80" width="60" height="60" rx="4"/>
+    <rect x="230" y="80" width="60" height="60" rx="4"/>
+    <rect x="300" y="80" width="60" height="60" rx="4"/>
+    <rect x="370" y="80" width="60" height="60" rx="4"/>
+    <rect x="440" y="80" width="60" height="60" rx="4"/>
+    <rect x="510" y="80" width="60" height="60" rx="4"/>
+    <rect x="160" y="150" width="60" height="60" rx="4"/>
+    <rect x="230" y="150" width="60" height="60" rx="4"/>
+    <rect x="300" y="150" width="60" height="60" rx="4"/>
+    <rect x="370" y="150" width="60" height="60" rx="4"/>
+    <rect x="440" y="150" width="60" height="60" rx="4"/>
+    <rect x="510" y="150" width="60" height="60" rx="4"/>
+    <rect x="160" y="220" width="60" height="60" rx="4"/>
+    <rect x="230" y="220" width="60" height="60" rx="4"/>
+    <rect x="300" y="220" width="60" height="60" rx="4"/>
+    <rect x="370" y="220" width="60" height="60" rx="4"/>
+    <rect x="440" y="220" width="60" height="60" rx="4"/>
+    <rect x="510" y="220" width="60" height="60" rx="4"/>
+  </g>
+  <!-- Some filled patches to suggest classification -->
+  <rect x="230" y="150" width="60" height="60" rx="4" fill="#c084fc" opacity="0.08"/>
+  <rect x="370" y="80" width="60" height="60" rx="4" fill="#f0abfc" opacity="0.06"/>
+  <rect x="300" y="220" width="60" height="60" rx="4" fill="#818cf8" opacity="0.07"/>
+  <rect x="440" y="150" width="60" height="60" rx="4" fill="#c084fc" opacity="0.05"/>
+  <!-- Shield / robustness curve -->
+  <path d="M400 310 Q360 280 360 250 Q360 220 400 200 Q440 220 440 250 Q440 280 400 310Z" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity="0.4"/>
+  <!-- Neural network nodes -->
+  <g opacity="0.25">
+    <circle cx="620" cy="120" r="4" fill="#a78bfa"/>
+    <circle cx="660" cy="180" r="3" fill="#818cf8"/>
+    <circle cx="640" cy="260" r="4" fill="#c084fc"/>
+    <circle cx="700" cy="150" r="3" fill="#f0abfc"/>
+    <circle cx="700" cy="230" r="3" fill="#a78bfa"/>
+    <line x1="620" y1="120" x2="660" y2="180" stroke="#a78bfa" stroke-width="0.5" opacity="0.5"/>
+    <line x1="660" y1="180" x2="640" y2="260" stroke="#818cf8" stroke-width="0.5" opacity="0.5"/>
+    <line x1="620" y1="120" x2="700" y2="150" stroke="#c084fc" stroke-width="0.5" opacity="0.5"/>
+    <line x1="700" y1="150" x2="700" y2="230" stroke="#a78bfa" stroke-width="0.5" opacity="0.5"/>
+    <line x1="700" y1="230" x2="640" y2="260" stroke="#f0abfc" stroke-width="0.5" opacity="0.5"/>
+    <line x1="660" y1="180" x2="700" y2="150" stroke="#818cf8" stroke-width="0.5" opacity="0.4"/>
+  </g>
+  <!-- Curvature wave -->
+  <path d="M100 340 Q200 300 300 330 Q400 360 500 320 Q600 280 700 330" fill="none" stroke="#a78bfa" stroke-width="0.8" opacity="0.15"/>
+</svg>

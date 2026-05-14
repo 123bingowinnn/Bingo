@@ -1,0 +1,901 @@
+{
+  "meta": {
+    "en": {
+      "siteTitle": "Xubin Sun – Portfolio",
+      "description": "CS Senior at Wenzhou-Kean University. Heading to Yale University for Computer Science in Fall 2026. Product-minded engineer with experience at Zoom, Alibaba Cloud, and Deloitte.",
+      "url": "https://xubinsun.com"
+    },
+    "zh": {
+      "siteTitle": "孙徐斌 – 个人作品集",
+      "description": "温州肯恩大学计算机科学大四，将于 2026 年秋季前往耶鲁大学学习计算机。兼具产品思维与工程能力，曾在 Zoom、阿里云、德勤实习。",
+      "url": "https://xubinsun.com"
+    }
+  },
+  "nav": [
+    {
+      "id": "about",
+      "en": "About",
+      "zh": "关于",
+      "href": "#about"
+    },
+    {
+      "id": "experience",
+      "en": "Internships",
+      "zh": "实习经历",
+      "href": "#experience"
+    },
+    {
+      "id": "projects",
+      "en": "Projects",
+      "zh": "项目",
+      "href": "#projects"
+    },
+    {
+      "id": "research",
+      "en": "Research",
+      "zh": "研究",
+      "href": "#research"
+    },
+    {
+      "id": "education",
+      "en": "Education",
+      "zh": "教育",
+      "href": "#education"
+    },
+    {
+      "id": "contact",
+      "en": "Contact",
+      "zh": "联系",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "en": {
+      "name": "Xubin Sun",
+      "title": "Aspiring Product Manager · Incoming CS @ Yale",
+      "tagline": "Former intern at Zoom, Alibaba Cloud, and Deloitte. Passionate about building AI products that solve real problems.",
+      "resumeLabel": "View Resume",
+      "contactLabel": "Get in Touch"
+    },
+    "zh": {
+      "name": "孙徐斌",
+      "title": "期望成为产品经理 · 即将入读耶鲁大学 CS",
+      "tagline": "曾在 Zoom、阿里云、德勤实习，专注打造解决真实问题的 AI 产品。",
+      "resumeLabel": "查看简历",
+      "contactLabel": "联系我"
+    }
+  },
+  "proofStrip": [
+    {
+      "icon": "GraduationCap",
+      "en": {
+        "label": "Education",
+        "value": "Incoming Yale CS"
+      },
+      "zh": {
+        "label": "教育背景",
+        "value": "即将入读 Yale CS"
+      }
+    },
+    {
+      "icon": "Trophy",
+      "en": {
+        "label": "GPA",
+        "value": "3.9/4"
+      },
+      "zh": {
+        "label": "GPA",
+        "value": "3.9/4"
+      },
+      "subtitle": {
+        "en": "Top 5%",
+        "zh": "专业前5%"
+      }
+    },
+    {
+      "icon": "Briefcase",
+      "numericValue": 4,
+      "en": {
+        "label": "Internships",
+        "value": "Zoom · Alibaba Cloud · Deloitte · Penghui"
+      },
+      "zh": {
+        "label": "段实习",
+        "value": "Zoom · 阿里云 · 德勤 · 朋辉科技"
+      }
+    },
+    {
+      "icon": "FolderGit2",
+      "numericValue": 3,
+      "en": {
+        "label": "Publications",
+        "value": "SCI Q1 · Int'l Conferences"
+      },
+      "zh": {
+        "label": "篇论文",
+        "value": "SCI · 国际会议"
+      }
+    }
+  ],
+  "about": {
+    "en": {
+      "heading": "About Me",
+      "headline": "Three lenses,",
+      "headlineAccent": "one craft.",
+      "paragraphs": [
+        "I like building products that people actually want to use. I've interned at Zoom working on AI features, at Alibaba Cloud on data products, and at Deloitte on backend systems — each time getting closer to understanding how good software really comes together.",
+        "I write research on the side — mostly around language models and medical imaging. A few papers came out of it, which I'm proud of.",
+        "Outside of work, I run, go to the gym, and make short videos. One somehow hit 29 million views.",
+        "Starting my master's at Yale University this fall."
+      ]
+    },
+    "zh": {
+      "heading": "关于我",
+      "headline": "产品、工程、研究，",
+      "headlineAccent": "都是解决问题的方式。",
+      "paragraphs": [
+        "我喜欢做别人真正愿意用的产品。先后在 Zoom 做 AI 产品实习、在阿里云做数据产品运营、在德勤做后端开发——每一段都让我更理解好的软件是怎么长出来的。",
+        "业余做一些研究，主要关注大语言模型和医学影像方向，发表了几篇论文。",
+        "工作之外喜欢跑步、健身、拍短视频。有一条莫名其妙到了 2900 万播放。",
+        "今年秋天去耶鲁大学读硕士。"
+      ]
+    }
+  },
+  "experience": [
+    {
+      "slug": "zoom-pm",
+      "tags": [
+        "PM",
+        "AI"
+      ],
+      "logo": "/images/zoom.svg",
+      "en": {
+        "company": "Zoom Communications (Present)",
+        "role": "AI Product Manager Intern",
+        "period": "Dec 2025 – Present",
+        "location": "Hangzhou, China",
+        "summary": "From zero to one: led an AI product from PRD to launch, orchestrating cross-functional teams and building the evaluation framework that now guides product iteration.",
+        "bullets": [
+          "Led requirements planning and delivery for Zoom Present AI editing features and mobile full-flow design, producing 6+ core PRDs and coordinating cross-functional reviews across product, design, frontend, backend, and QA teams",
+          "Designed data instrumentation schemas for key features (e.g., slide insertion, search), defining trigger sources, parameter fields, success/failure criteria, and funnel event chains to support adoption rate, success rate, and undo behavior monitoring",
+          "Conducted 5+ competitive analyses covering Gamma, Genspark, Manus, AnyGen, and Skywork — benchmarking AI PPT generation speed and interaction paths to quantify gaps and inform product iteration priorities",
+          "Built a multi-dimensional PPT generation quality evaluation framework covering content quality, design performance, and narrative structure, using LLM Judge with fixed prompts for reproducible scoring; explored Opus4.6 OOXML advantages to validate Zoom Present fast-mode feasibility"
+        ],
+        "techStack": [
+          "PRD",
+          "Jira",
+          "Figma",
+          "Data Instrumentation",
+          "LLM Evaluation",
+          "Competitive Analysis"
+        ]
+      },
+      "zh": {
+        "company": "数沐软件（杭州）/ Zoom",
+        "role": "AI 产品经理实习生",
+        "period": "2025.12 – 至今",
+        "location": "杭州",
+        "summary": "从 0 到 1：主导 AI 产品从 PRD 到上线的全流程，协调跨职能团队协作，搭建了现指导产品迭代的评测体系。",
+        "bullets": [
+          "负责 Zoom Present AI 编辑能力与移动端全流程设计需求的推进，主导输出 6+ 核心 PRD，组织多场跨产品、设计、前后端、测试评审对齐范围与方案，参与上线验收闭环",
+          "围绕核心需求制定数据采集方案并与数据工程师对齐，针对插页、查找等能力定义触发来源、参数字段与成功失败口径，明确漏斗事件链路，支撑采用率、成功率与撤回行为监控",
+          "完成 5+ 竞品分析，覆盖 Gamma、Genspark、Manus、AnyGen、Skywork 等产品的 AI PPT 生成速度测评与交互路径对比，量化差距为产品迭代提供方向",
+          "构建覆盖内容质量、设计表现与叙事结构的 PPT 生成质量评测体系，采用 LLM Judge 固定提示词实现可复现打分；探索 Opus4.6 OOXML 优势以论证 Zoom Present 快速模式可行性"
+        ],
+        "techStack": [
+          "PRD",
+          "Jira",
+          "Figma",
+          "数据埋点",
+          "LLM 评测",
+          "竞品分析"
+        ]
+      }
+    },
+    {
+      "slug": "alibaba-cloud",
+      "tags": [
+        "PM",
+        "Data"
+      ],
+      "logo": "/images/alibaba.svg",
+      "en": {
+        "company": "Alibaba Cloud (Lingyang Intelligence)",
+        "role": "Product Operations Intern, Dataphin",
+        "period": "Jul 2025 – Oct 2025",
+        "location": "Hangzhou, China",
+        "summary": "Built a global go-to-market engine: 50+ interactive demos, a data-driven content strategy, and cross-border partnerships that fueled international expansion.",
+        "bullets": [
+          "Created 50+ English demos on Storylane covering Copilot and NL2SQL scenarios, built reusable templates with standardized scripts and storyboards, and published across 6 channels including Alibaba Cloud website and WeChat Mini Program",
+          "Developed a demo data monitoring dashboard tracking views, traffic sources, retention, and conversion rates by channel — identifying user drop-off points and bottleneck pages to guide content optimization",
+          "Built an online searchable demo library organized by channel with standardized naming and versioning conventions, significantly improving asset retrieval and reuse efficiency",
+          "Investigated data governance platforms (NetEase ShuFan, IBM) across 12 metrics covering functional fit, technical reliability, cost, and sustainability — contributing to product positioning and differentiation strategy",
+          "Served as international business liaison, communicating in English with Storylane's California HQ, organizing meetings, and coordinating bug reports and optimization plans"
+        ],
+        "techStack": [
+          "Storylane",
+          "Data Analytics",
+          "Figma",
+          "WeChat Mini Program",
+          "Competitive Analysis"
+        ]
+      },
+      "zh": {
+        "company": "阿里云智能集团（瓴羊）",
+        "role": "Dataphin 产品运营实习生",
+        "period": "2025.07 – 2025.10",
+        "location": "杭州",
+        "summary": "构建全球化增长引擎：产出 50+ 交互式演示、用数据驱动内容策略、搭建跨境合作体系，助力产品国际化进程。",
+        "bullets": [
+          "制作并发布 50+ 英文演示 Demo（覆盖 Copilot、NL2SQL 等场景），通过模板化脚本与标准化分镜实现 6 个渠道（含阿里云官网与微信小程序）统一分发",
+          "搭建演示数据监控看板，跟踪各渠道浏览量、流量来源、留存与转化率，识别用户流失点与瓶颈页面，为内容选题及视频节奏优化提供量化依据",
+          "建立线上可检索演示库，按渠道整理嵌入链接并制定命名与版本规范，显著提升素材检索与复用效率",
+          "调研网易数帆、IBM 等数据治理平台，基于功能契合度、技术可靠性、成本与可持续性评估 12 项关键指标，参与产品定位与差异化价值分析",
+          "担任国际业务对接窗口，与 Storylane 加州总部全英文沟通并组织线上会议，反馈产品 Bug 与调优方案"
+        ],
+        "techStack": [
+          "Storylane",
+          "数据分析",
+          "Figma",
+          "微信小程序",
+          "竞品分析"
+        ]
+      }
+    },
+    {
+      "slug": "deloitte-backend",
+      "tags": [
+        "Backend",
+        "Engineering"
+      ],
+      "logo": "/images/deloitte.svg",
+      "en": {
+        "company": "Deloitte China (Hangzhou)",
+        "role": "Data Platform Developer Intern (SAP Project)",
+        "period": "Apr 2025 – Jul 2025",
+        "location": "Hangzhou, China",
+        "summary": "Wore the full product hat in engineering: authored requirements, designed prototypes, developed APIs, and shipped features end-to-end on an SAP enterprise project.",
+        "bullets": [
+          "Participated in full backend development lifecycle including requirements documentation, Axure prototyping, database design, API development, and Postman integration testing",
+          "Built an API gateway information management module to synchronize API data from Alibaba Cloud, classify APIs by business centers, and track utilization rates for ongoing monitoring",
+          "Designed and optimized backend interfaces in Spring Boot and MyBatis — including supplier quality management (CRUD + Excel export), customer information retrieval (cross-table queries), and SAP CSB payroll integration",
+          "Developed DingTalk automation features using XXL-JOB — data submission reminders, account deactivation notifications, and dynamic URL-based task routing for improved notification accuracy"
+        ],
+        "techStack": [
+          "Java",
+          "Spring Boot",
+          "MyBatis",
+          "MySQL",
+          "DDD",
+          "Postman",
+          "Axure",
+          "XXL-JOB"
+        ]
+      },
+      "zh": {
+        "company": "德勤咨询（杭州）",
+        "role": "SAP 项目实习生 · Java 后端开发",
+        "period": "2025.04 – 2025.07",
+        "location": "杭州",
+        "summary": "在工程团队中找到产品视角：编写需求文档、设计原型、开发接口，端到端交付 SAP 企业级项目功能。",
+        "bullets": [
+          "参与完整后端开发流程，包括需求文档编写、Axure 原型设计、数据库设计、API 开发及 Postman 集成测试",
+          "设计并实现阿里云网关接口管理模块，获取接口信息、分类存储、统计各中心 API 数量及使用率，并基于服务路径实现分类存储方案",
+          "使用 DDD 架构开发质量信息接口（增删改查 + Excel 导出优化）、客户信息跨表查询接口、SAP CSB 薪酬查询接口（反序列化处理与展示），完成前后端联调上线",
+          "优化钉钉代办推送功能——通过 XXL-JOB 实现数据提交提醒、账户停用通知与动态 URL 拼接，提升通知准确性"
+        ],
+        "techStack": [
+          "Java",
+          "Spring Boot",
+          "MyBatis",
+          "MySQL",
+          "DDD",
+          "Postman",
+          "Axure",
+          "XXL-JOB"
+        ]
+      }
+    },
+    {
+      "slug": "penghui-bigdata",
+      "tags": [
+        "Data",
+        "Backend",
+        "AI"
+      ],
+      "logo": "",
+      "en": {
+        "company": "Penghui Technology (Shanghai)",
+        "role": "Big Data Intern",
+        "period": "Jun 2024 – Sep 2024",
+        "location": "Shanghai, China",
+        "summary": "Where my product intuition began: built AI interfaces and modernized legacy systems — learning firsthand how tech decisions shape user experience.",
+        "bullets": [
+          "Developed a Python-based AI reply interface — writing prompts, calling Zhipu's LLM API, and persisting user queries and AI responses to MySQL for durable storage",
+          "Upgraded script-based queries into standardized Spring Boot + MyBatis + MySQL web services for enterprise invoice retrieval, billing details, and address correction — with pagination, fuzzy search, and Postman-validated API contracts",
+          "Applied Hadoop, Hive, and Spark for large-scale data processing — writing SQL and HiveQL queries and leveraging Spark transformations for efficient data computation"
+        ],
+        "techStack": [
+          "Python",
+          "Spring Boot",
+          "MyBatis",
+          "MySQL",
+          "Hadoop",
+          "Hive",
+          "Spark",
+          "LLM API"
+        ]
+      },
+      "zh": {
+        "company": "朋辉科技（上海）",
+        "role": "大数据实习生",
+        "period": "2024.06 – 2024.09",
+        "location": "上海",
+        "summary": "产品直觉的起点：构建 AI 接口、升级遗留系统——实战中理解技术决策如何塑造用户体验。",
+        "bullets": [
+          "使用 Python 开发 AI 回复接口——撰写 prompt、调用智谱清言大模型 API、将用户问题与 AI 回复写入 MySQL 实现持久化存储",
+          "基于 Spring Boot + MyBatis + MySQL 将脚本式查询升级为标准化 Web 服务，上线企业信息检索、开票详情、地址纠错三类接口，补齐分页与模糊检索并完成 Postman 联调",
+          "应用 Hadoop、Hive 和 Spark 技术栈处理大规模数据集——使用 SQL 和 HiveQL 进行数据查询，利用 Spark 转换和操作符进行高效数据计算"
+        ],
+        "techStack": [
+          "Python",
+          "Spring Boot",
+          "MyBatis",
+          "MySQL",
+          "Hadoop",
+          "Hive",
+          "Spark",
+          "LLM API"
+        ]
+      }
+    },
+    {
+      "slug": "wku-ta",
+      "tags": [
+        "Teaching"
+      ],
+      "logo": "",
+      "en": {
+        "company": "Wenzhou-Kean University",
+        "role": "Teaching Assistant, Computer Science Dept.",
+        "period": "Sep 2023 – Jan 2024",
+        "location": "Wenzhou, China",
+        "summary": "Supported CS instruction through workshops, grading, and data-driven student performance tracking.",
+        "bullets": [
+          "Organized workshops for academic Q&A, assisted in grading coding assignments, and evaluated final projects",
+          "Developed and maintained a student grade management database using SQL, generating performance reports and learning progress charts to support data-driven teaching strategies"
+        ],
+        "techStack": [
+          "SQL",
+          "Data Analysis",
+          "Python"
+        ]
+      },
+      "zh": {
+        "company": "温州肯恩大学",
+        "role": "助教 · 计算机系",
+        "period": "2023.09 – 2024.01",
+        "location": "温州",
+        "summary": "通过工作坊、评分与数据驱动的学生表现追踪支持计算机科学教学。",
+        "bullets": [
+          "组织学术答疑工作坊，协助批改编程作业与评估期末项目",
+          "开发和维护学生成绩管理数据库，使用 SQL 和数据分析工具生成成绩报表与学习进度图表，为教学策略优化提供数据支持"
+        ],
+        "techStack": [
+          "SQL",
+          "数据分析",
+          "Python"
+        ]
+      }
+    },
+    {
+      "slug": "wku-library",
+      "tags": [
+        "Engineering"
+      ],
+      "logo": "",
+      "en": {
+        "company": "Wenzhou-Kean University Library",
+        "role": "IT Assistant",
+        "period": "Jun 2023 – Present",
+        "location": "Wenzhou, China",
+        "summary": "Built Python automation tools for large-scale book data collection and library system management.",
+        "bullets": [
+          "Developed web crawlers to collect high-rated books (rating ≥ 8) from Douban and wrote data validation scripts to ensure correct book code formats and data accuracy",
+          "Automated large-scale book data collection and real-time updates, significantly improving data processing efficiency for library information management"
+        ],
+        "techStack": [
+          "Python",
+          "Web Scraping",
+          "Data Validation"
+        ]
+      },
+      "zh": {
+        "company": "温州肯恩大学图书馆",
+        "role": "IT 助理",
+        "period": "2023.06 – 至今",
+        "location": "温州",
+        "summary": "开发 Python 自动化工具进行大规模图书数据采集与图书馆系统管理。",
+        "bullets": [
+          "开发基于 Python 的自动化爬虫脚本，成功抓取豆瓣高评分图书（评分 ≥ 8）数据，并编写数据验证脚本确保图书编码格式和数据准确性",
+          "实现海量图书数据的实时更新与自动化管理，显著提升图书馆信息管理部门的数据处理效率"
+        ],
+        "techStack": [
+          "Python",
+          "Web Scraping",
+          "数据验证"
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "slug": "digital-human-dementia",
+      "tags": [
+        "AI",
+        "Research",
+        "Full-Stack"
+      ],
+      "featured": true,
+      "image": "/images/projects/digital-human.jpg",
+      "video": "/videos/digital-human.mp4",
+      "links": [],
+      "en": {
+        "title": "Real-time Digital Human for Dementia Care",
+        "summary": "End-to-end AI companion system with STT + GPT-4o + TTS pipeline, RAG-enhanced dialogue, and NVIDIA Audio2Face + UE5 avatar — finalist in 2025 Cougar Investigator Grant Challenge.",
+        "problem": "Dementia patients lack consistent, responsive companionship. Caregivers face burnout and existing digital solutions cannot sustain natural, multi-turn voice interactions with emotional expressiveness.",
+        "action": "Built an end-to-end real-time pipeline: STT for speech recognition (92% average accuracy), GPT-4o for contextual dialogue generation, and TTS for natural voice output. Integrated Fine-tuning + RAG to improve context retention and recall accuracy by 25%. Combined NVIDIA Audio2Face with Unreal Engine 5 for lip-sync and facial expression animation, boosting realism and immersion by 30%.",
+        "result": "Achieved smooth multi-turn voice interaction with 3-4 second response latency. Context retention and recall accuracy improved by 25% via RAG. Avatar realism and immersion improved by 30% via Audio2Face + UE5. Selected as finalist in 2025 Cougar Investigator Grant Challenge (Shark Tank format).",
+        "learnings": "Deepened understanding of multimodal AI pipeline integration (STT → LLM → TTS → Avatar), real-time streaming architectures, and designing empathetic systems for vulnerable populations.",
+        "techStack": [
+          "GPT-4o",
+          "RAG",
+          "Fine-tuning",
+          "STT",
+          "TTS",
+          "NVIDIA Audio2Face",
+          "Unreal Engine 5",
+          "Python"
+        ]
+      },
+      "zh": {
+        "title": "面向痴呆症人群的实时虚拟人交互系统",
+        "summary": "端到端 AI 陪伴系统，集成 STT + GPT-4o + TTS 管线、RAG 增强对话与 NVIDIA Audio2Face + UE5 虚拟人——入围 2025 Cougar Investigator Grant Challenge 决赛。",
+        "problem": "痴呆症患者缺乏持续、响应及时的陪伴。护理者面临倦怠问题，现有数字方案无法维持自然的多轮语音交互和情感表达。",
+        "action": "构建端到端实时管线：STT 语音识别（平均准确率 92%）、GPT-4o 上下文对话生成、TTS 自然语音输出。引入 Fine-tuning + RAG 将上下文保持与信息召回准确性提升 25%。结合 NVIDIA Audio2Face + UE5 实现口型与表情动画，拟真度与沉浸感提升 30%。",
+        "result": "实现流畅多轮语音交互，响应延迟 3-4 秒。通过 RAG 上下文保持与召回准确性提升 25%；通过 Audio2Face + UE5 拟真度与沉浸感提升 30%。入围 2025 Cougar Investigator Grant Challenge 决赛（Shark Tank 形式）。",
+        "learnings": "深入理解多模态 AI 管线集成（STT → LLM → TTS → Avatar）、实时流式架构，以及为弱势群体设计有同理心的系统。",
+        "techStack": [
+          "GPT-4o",
+          "RAG",
+          "Fine-tuning",
+          "STT",
+          "TTS",
+          "NVIDIA Audio2Face",
+          "Unreal Engine 5",
+          "Python"
+        ]
+      }
+    },
+    {
+      "slug": "plant-disease-classification",
+      "tags": [
+        "AI",
+        "CV",
+        "Research"
+      ],
+      "featured": true,
+      "image": "/images/projects/plant-disease.jpg",
+      "video": "/videos/plant-disease.mp4",
+      "links": [],
+      "en": {
+        "title": "Plant Disease Classification System with Explainable AI",
+        "summary": "Deep learning classification system achieving 91% accuracy via model stacking + CNNs, with Grad-CAM explainability and LLM-powered treatment recommendations.",
+        "problem": "Plant disease identification requires expert knowledge that is inaccessible to most farmers. Existing CV models lack explainability and actionable treatment guidance, limiting practical adoption.",
+        "action": "Designed and trained multiple CNN models for five-class disease image classification, improved accuracy to 91% via model stacking strategy, and addressed class imbalance through data augmentation and resampling. Applied Grad-CAM for decision process visualization. Developed a Streamlit web application integrated with ChatGPT for automated diagnosis and treatment recommendations.",
+        "result": "Achieved 91% classification accuracy across 5 disease categories. Grad-CAM visualizations enhanced model transparency. LLM integration provided actionable treatment plans, forming a complete decision support system deployable via smartphone.",
+        "learnings": "Learned the importance of combining classification accuracy with explainability for real-world trust, and how to integrate LLMs to bridge model predictions and human-actionable guidance.",
+        "techStack": [
+          "PyTorch",
+          "CNN",
+          "Model Stacking",
+          "Grad-CAM",
+          "Streamlit",
+          "ChatGPT",
+          "Python",
+          "OpenCV"
+        ]
+      },
+      "zh": {
+        "title": "基于深度学习的植物病害分类系统（可解释性分析）",
+        "summary": "采用模型堆叠 + CNN 达到 91% 准确率的深度学习分类系统，具备 Grad-CAM 可解释性和 LLM 驱动的治疗建议。",
+        "problem": "植物病害识别需要专家知识，大多数农民难以获取。现有 CV 模型缺乏可解释性和可操作的治疗指导，限制了实际应用。",
+        "action": "设计并训练多个 CNN 模型进行五分类病害图像识别，通过模型堆叠（stacking）策略将准确率提升至 91%，结合数据增强和类别平衡技术保持泛化能力。通过 Grad-CAM 对决策过程进行可视化。开发基于 Streamlit 的 Web 应用，集成 ChatGPT 提供自动化诊断与治疗建议。",
+        "result": "在 5 个疾病类别中达到 91% 分类准确率。Grad-CAM 可视化增强了模型透明度。LLM 集成提供可操作的治疗方案，形成可通过智能手机部署的完整决策支持系统。",
+        "learnings": "认识到在实际应用中将分类准确率与可解释性相结合的重要性，以及如何利用 LLM 将模型预测转化为人类可操作的指导。",
+        "techStack": [
+          "PyTorch",
+          "CNN",
+          "模型堆叠",
+          "Grad-CAM",
+          "Streamlit",
+          "ChatGPT",
+          "Python",
+          "OpenCV"
+        ]
+      }
+    },
+    {
+      "slug": "pathmnist-classification",
+      "tags": [
+        "AI",
+        "Research",
+        "CV"
+      ],
+      "featured": true,
+      "image": "/images/projects/pathmnist-cover.jpg",
+      "links": [
+        {
+          "label": "Paper (DOI)",
+          "url": "https://doi.org/10.1117/12.3044867"
+        }
+      ],
+      "en": {
+        "title": "Curvature-Regularized Robust Medical Image Classification",
+        "summary": "Novel deep learning framework combining CURE loss, depthwise separable & dilated convolutions, and attention mechanisms — achieving only 5.6% accuracy drop under adversarial attacks.",
+        "problem": "Medical image classification models are vulnerable to adversarial perturbations, raising safety concerns in clinical deployment. Standard training fails to produce robust models under input noise.",
+        "action": "Developed MedMamba framework applying curvature regularization (CURE) to control Hessian eigenvalues for enhanced robustness. Designed a dual-branch SS-Convd-SSM module combining dilated and depthwise separable convolutions with attention for precise feature extraction. Validated robustness through FGSM and PGD adversarial attacks.",
+        "result": "Under adversarial attack, the model showed only a 5.6% drop in average accuracy and 4.1% drop in AUC — demonstrating strong robustness compared to baseline methods. Published at ICCGIV 2024.",
+        "learnings": "Gained expertise in adversarial robustness, curvature regularization theory, and designing neural architectures that balance efficiency with resilience to input perturbations.",
+        "techStack": [
+          "PyTorch",
+          "CURE Loss",
+          "FGSM",
+          "PGD",
+          "Depthwise Separable Conv",
+          "Dilated Conv",
+          "Attention",
+          "Python"
+        ]
+      },
+      "zh": {
+        "title": "基于曲率正则化的鲁棒医学图像分类（PATHMNIST）",
+        "summary": "结合 CURE 损失、深度可分离卷积/膨胀卷积与注意力机制的新型深度学习框架——在对抗攻击下准确率仅下降 5.6%。",
+        "problem": "医学图像分类模型容易受到对抗性扰动影响，在临床部署中存在安全隐患。标准训练无法在输入噪声下产生鲁棒模型。",
+        "action": "开发 MedMamba 框架，利用曲率正则化（CURE）控制 Hessian 特征值增强鲁棒性。设计双分支 SS-Convd-SSM 模块，结合膨胀卷积和深度可分离卷积与注意力机制实现精确特征提取。通过 FGSM 和 PGD 对抗攻击验证鲁棒性。",
+        "result": "在对抗攻击下，模型平均准确率仅下降 5.6%，AUC 仅下降 4.1%——相比基线方法展现出强鲁棒性。论文发表于 ICCGIV 2024。",
+        "learnings": "深入掌握了对抗鲁棒性、曲率正则化理论，以及设计兼顾效率与输入扰动韧性的神经网络架构。",
+        "techStack": [
+          "PyTorch",
+          "CURE Loss",
+          "FGSM",
+          "PGD",
+          "深度可分离卷积",
+          "膨胀卷积",
+          "注意力机制",
+          "Python"
+        ]
+      }
+    },
+    {
+      "slug": "octmnist-distillation",
+      "tags": [
+        "AI",
+        "Research",
+        "CV"
+      ],
+      "featured": false,
+      "image": "/images/projects/octmnist-cover.jpg",
+      "links": [
+        {
+          "label": "Paper (DOI)",
+          "url": "https://doi.org/10.1117/12.3045706"
+        }
+      ],
+      "en": {
+        "title": "Privacy Dataset Distillation for Medical Imaging (OCTMNIST)",
+        "summary": "Data distillation method balancing privacy protection with key feature retention — achieving 47.25% accuracy under IPC=1, surpassing existing best results.",
+        "problem": "Medical image datasets contain sensitive patient information. Training on raw data risks privacy breaches, while naive anonymization destroys critical diagnostic features.",
+        "action": "Co-designed a distillation method introducing class-centric and covariance-matching constraints. Conducted multiple experiments under varied images-per-class (IPC=1,2,5,10) settings. Benchmarked against DC, DM, and DSA3 methods. Assessed privacy by quantifying structural similarity between original and distilled images.",
+        "result": "Achieved 47.25% accuracy under IPC=1, surpassing existing best results. Cross-class SSIM ranged 0.68–0.75 and L2 norm 0.59–0.65, demonstrating effective anonymization. Published at AASIP 2024.",
+        "learnings": "Deepened understanding of privacy-utility tradeoffs in dataset distillation and the role of structural constraints in preserving discriminative features while ensuring anonymization.",
+        "techStack": [
+          "PyTorch",
+          "Dataset Distillation",
+          "SSIM",
+          "Privacy Analysis",
+          "Python"
+        ]
+      },
+      "zh": {
+        "title": "基于类中心化与协方差匹配的隐私医学图像数据集蒸馏（OCTMNIST）",
+        "summary": "平衡隐私保护与关键特征保留的数据蒸馏方法——在 IPC=1 下达到 47.25% 准确率，超越现有最优结果。",
+        "problem": "医学图像数据集包含敏感患者信息。直接训练存在隐私泄露风险，而简单匿名化会破坏关键诊断特征。",
+        "action": "共同设计引入类中心化和协方差匹配约束的蒸馏方法。在不同每类图像数（IPC=1,2,5,10）设置下进行多组实验。与 DC、DM、DSA3 方法进行基准对比。通过量化原始与蒸馏图像的结构相似性评估隐私保护效果。",
+        "result": "在 IPC=1 下达到 47.25% 准确率，超越现有最优结果。跨类 SSIM 在 0.68-0.75 范围，L2 范数在 0.59-0.65 范围，证明了有效的匿名化。论文发表于 AASIP 2024。",
+        "learnings": "深入理解了数据集蒸馏中隐私-效用的权衡，以及结构约束在保留判别特征同时确保匿名化中的作用。",
+        "techStack": [
+          "PyTorch",
+          "数据集蒸馏",
+          "SSIM",
+          "隐私分析",
+          "Python"
+        ]
+      }
+    },
+    {
+      "slug": "fridge-clear",
+      "tags": [
+        "Product",
+        "Full-Stack",
+        "Web"
+      ],
+      "featured": true,
+      "image": "/images/projects/fridge-clear-cover.svg",
+      "links": [
+        {
+          "label": "Live Demo",
+          "url": "https://fridge-clear.vercel.app"
+        }
+      ],
+      "en": {
+        "title": "What's in My Fridge",
+        "summary": "Food inventory and expiry management web app designed to reduce waste, save money, and help users keep track of ingredients with a cleaner daily workflow.",
+        "problem": "Households often forget what ingredients are already in the fridge, which leads to duplicate purchases, expired food, and unnecessary waste. Existing habits are usually manual and fragmented, making daily kitchen management inefficient.",
+        "action": "Built a web product centered on ingredient visibility and expiry-date management. Designed account-based access with login and registration flows, and organized the experience around checking, managing, and maintaining personal food inventory in one place. Shaped the interface as a lightweight, practical consumer tool rather than a heavy inventory system.",
+        "result": "Delivered a working online product with a clear value proposition: helping users understand what is already in the fridge, manage ingredient data, and make better use of food before it expires. The project demonstrates product thinking around everyday utility, clarity, and retention-oriented workflow design.",
+        "learnings": "This project strengthened my understanding of consumer product design for small but high-frequency problems. It reinforced that good product experience often comes from simplifying daily decisions, not from adding complexity.",
+        "techStack": [
+          "Next.js",
+          "PWA",
+          "Authentication",
+          "Expiry Tracking",
+          "Inventory Management",
+          "Responsive UI"
+        ]
+      },
+      "zh": {
+        "title": "冰箱里面有什么",
+        "summary": "面向日常生活的食材库存与保质期管理 Web 应用，帮助用户减少浪费、节省开支，并更清晰地管理冰箱里的食材。",
+        "problem": "很多人并不清楚冰箱里到底还有什么，常常出现重复购买、食材过期、最后被浪费的问题。传统做法依赖记忆或零散记录，日常管理成本高且不稳定。",
+        "action": "围绕“看见食材”和“管理保质期”设计并实现了一款 Web 产品，提供登录注册与个人数据管理能力，把食材查看、记录和维护集中到同一个轻量化流程中。整体上按消费者日常使用场景来设计，而不是做成笨重的库存后台。",
+        "result": "交付了可在线访问的完整产品，核心价值明确：帮助用户知道冰箱里有什么、管理食材信息，并在过期前更合理地使用它们。这个项目体现了我对高频生活场景、清晰信息架构和实用型产品体验的理解。",
+        "learnings": "这个项目让我更明确地感受到，很多好产品不是靠堆功能，而是靠降低用户每天做决定的成本。对生活类工具来说，清晰、轻量和持续可用往往比复杂能力更重要。",
+        "techStack": [
+          "Next.js",
+          "PWA",
+          "登录鉴权",
+          "保质期管理",
+          "库存管理",
+          "响应式界面"
+        ]
+      }
+    }
+  ],
+  "publications": [
+    {
+      "slug": "llm-negative-rejection",
+      "en": {
+        "title": "Improving Negative Rejection Ability in Language Models: A Review of Fine-Tuned LLMs, RAG, and RAFT",
+        "venue": "Journal of King Saud University – Computer and Information Sciences (SCI Q1)",
+        "date": "2025",
+        "authors": "B. Li, Z. Zhong, H. Zhang, X. Sun, B. Ihnaini",
+        "abstract": "A systematic survey comparing Fine-Tuning, RAG, and RAFT approaches for improving LLM negative rejection ability and safety. Establishes a unified framework for evaluating rejection performance across different model architectures and identifies applicable scenarios for each approach.",
+        "link": "https://doi.org/10.1007/s44443-025-00334-6"
+      },
+      "zh": {
+        "title": "改进大语言模型的负向拒识能力：基于 Fine-Tuning、RAG 与 RAFT 的综述研究",
+        "venue": "Journal of King Saud University – Computer and Information Sciences (SCI Q1)",
+        "date": "2025",
+        "authors": "B. Li, Z. Zhong, H. Zhang, X. Sun, B. Ihnaini",
+        "abstract": "系统性调研比较 Fine-Tuning、RAG、RAFT 三种方法在提升 LLM 负向拒识能力与安全性方面的性能差异。建立统一评估框架，识别各方法的适用场景。",
+        "link": "https://doi.org/10.1007/s44443-025-00334-6"
+      }
+    },
+    {
+      "slug": "pathmnist-paper",
+      "en": {
+        "title": "Robust Medical Image Classification with Curvature Regularization on the PATHMNIST",
+        "venue": "Fourth International Conference on Computer Graphics, Image, and Virtualization (ICCGIV 2024)",
+        "date": "2024",
+        "authors": "G. Yang, J. Qi, X. Sun",
+        "abstract": "Proposes a curvature-regularized deep learning framework (MedMamba) for robust pathological image classification. Combines CURE loss with dual-branch convolution and attention modules. Under FGSM and PGD adversarial attacks, achieves only 5.6% accuracy drop and 4.1% AUC drop.",
+        "link": "https://doi.org/10.1117/12.3044867"
+      },
+      "zh": {
+        "title": "基于 PATHMNIST 的曲率正则化鲁棒医学图像分类",
+        "venue": "第四届计算机图形学、图像与虚拟化国际会议 (ICCGIV 2024)",
+        "date": "2024",
+        "authors": "G. Yang, J. Qi, X. Sun",
+        "abstract": "提出用于鲁棒病理图像分类的曲率正则化深度学习框架（MedMamba）。结合 CURE 损失与双分支卷积及注意力模块。在 FGSM 和 PGD 对抗攻击下，准确率仅下降 5.6%，AUC 仅下降 4.1%。",
+        "link": "https://doi.org/10.1117/12.3044867"
+      }
+    },
+    {
+      "slug": "octmnist-paper",
+      "en": {
+        "title": "Privacy Dataset Distillation for Medical Imaging Using Class Centralization and Covariance Matching for OCTMNIST",
+        "venue": "Fourth International Conference on Advanced Algorithms and Signal Image Processing (AASIP 2024)",
+        "date": "2024",
+        "authors": "X. Sun, D. Li, G. Yang",
+        "abstract": "Introduces a privacy-preserving dataset distillation method combining class-centric and covariance-matching constraints. Achieves 47.25% accuracy under IPC=1 on OCTMNIST, surpassing DC, DM, and DSA3 baselines, with cross-class SSIM 0.68–0.75 confirming effective anonymization.",
+        "link": "https://doi.org/10.1117/12.3045706"
+      },
+      "zh": {
+        "title": "基于类中心化与协方差匹配的 OCTMNIST 隐私医学图像数据集蒸馏",
+        "venue": "第四届高级算法与信号图像处理国际会议 (AASIP 2024)",
+        "date": "2024",
+        "authors": "X. Sun, D. Li, G. Yang",
+        "abstract": "提出结合类中心化和协方差匹配约束的隐私保护数据集蒸馏方法。在 OCTMNIST 上 IPC=1 条件下达到 47.25% 准确率，超越 DC、DM、DSA3 基线。跨类 SSIM 0.68-0.75 验证了有效的匿名化。",
+        "link": "https://doi.org/10.1117/12.3045706"
+      }
+    }
+  ],
+  "education": [
+    {
+      "logo": "/images/offers/yale-logo.png",
+      "en": {
+        "school": "Yale University",
+        "degree": "M.S. in Computer Science",
+        "period": "Fall 2026",
+        "location": "New Haven, CT, USA",
+        "highlights": [
+          "Will begin the M.S. in Computer Science at Yale University in Fall 2026"
+        ]
+      },
+      "zh": {
+        "school": "耶鲁大学",
+        "degree": "计算机科学硕士",
+        "period": "2026 秋季入学",
+        "location": "康涅狄格州纽黑文，美国",
+        "highlights": [
+          "将于 2026 年秋季赴耶鲁大学攻读计算机科学硕士"
+        ]
+      }
+    },
+    {
+      "logo": "/images/wku.svg",
+      "en": {
+        "school": "Wenzhou-Kean University",
+        "degree": "B.S. in Computer Science (Minor: Mathematics)",
+        "period": "Aug 2022 – Jun 2026",
+        "location": "Wenzhou, China",
+        "highlights": [
+          "GPA: 3.922 / 4.0 (Top 5%, Ranking 5/140)",
+          "Dean's Scholarship: 2nd Prize (2024–2025), 3rd Prize (2022–2023)",
+          "Dean's List: Spring & Fall 2023, Spring & Fall 2024, Spring 2025",
+          "Core courses: Computer Systems, Data Structures, Discrete Structures, Computer Organization, Big Data, Calculus, Linear Algebra",
+          "Exchange at Kean University (NJ, USA): Jan – May 2025, CS core courses + cross-cultural projects"
+        ]
+      },
+      "zh": {
+        "school": "温州肯恩大学",
+        "degree": "计算机科学学士（辅修：数学）",
+        "period": "2022.08 – 2026.06",
+        "location": "浙江温州",
+        "highlights": [
+          "GPA: 3.922 / 4.0（专业前 5%，排名 5/140）",
+          "院长奖学金：2024-2025 学年二等奖，2022-2023 学年三等奖",
+          "院长名单：2023 春秋、2024 春秋、2025 春",
+          "主修课程：计算机系统、数据结构、离散结构、计算机组成、大数据、微积分、线性代数",
+          "美国交换：Kean University（新泽西），2025.01 – 2025.05，修读 CS 核心课程并参与跨文化项目"
+        ]
+      }
+    }
+  ],
+  "leadership": [
+    {
+      "en": {
+        "role": "Head of New Media Department",
+        "organization": "Wharf Poetry Club, WKU",
+        "period": "Jun 2023 – Sep 2024",
+        "description": "Published original poetry and articles on a weekly basis and managed publicity for club events and activities, growing the club's online presence and engagement."
+      },
+      "zh": {
+        "role": "新媒体部部长",
+        "organization": "温州肯恩大学 码头诗社",
+        "period": "2023.06 – 2024.09",
+        "description": "每周发表原创诗歌与文章，负责社团活动的宣传管理，提升社团线上影响力与参与度。"
+      }
+    },
+    {
+      "en": {
+        "role": "Teaching Assistant",
+        "organization": "Department of Computer Science, WKU",
+        "period": "Sep 2023 – Jan 2024",
+        "description": "Organized academic workshops, assisted in grading coding assignments, and evaluated final projects. Built a grade management database for data-driven teaching support."
+      },
+      "zh": {
+        "role": "助教",
+        "organization": "温州肯恩大学计算机系",
+        "period": "2023.09 – 2024.01",
+        "description": "组织学术答疑工作坊，协助批改编程作业与评估期末项目。搭建成绩管理数据库，为数据驱动的教学支持提供工具。"
+      }
+    },
+    {
+      "en": {
+        "role": "IT Assistant",
+        "organization": "WKU Library, Information Management Dept.",
+        "period": "Jun 2023 – Present",
+        "description": "Developed Python web crawlers for large-scale book data collection from Douban, wrote data validation scripts, and automated real-time library data updates."
+      },
+      "zh": {
+        "role": "IT 助理",
+        "organization": "温州肯恩大学图书馆信息管理部",
+        "period": "2023.06 – 至今",
+        "description": "开发 Python 自动化爬虫脚本从豆瓣抓取大规模图书数据，编写数据验证脚本，实现图书馆数据的实时更新与自动化管理。"
+      }
+    }
+  ],
+  "interests": [
+    {
+      "icon": "Dumbbell",
+      "en": {
+        "label": "Fitness",
+        "detail": "Regular gym training and strength building"
+      },
+      "zh": {
+        "label": "健身",
+        "detail": "定期健身房训练与力量提升"
+      }
+    },
+    {
+      "icon": "Timer",
+      "en": {
+        "label": "Running",
+        "detail": "Long-distance running enthusiast"
+      },
+      "zh": {
+        "label": "跑步",
+        "detail": "长跑爱好者"
+      }
+    },
+    {
+      "icon": "Video",
+      "en": {
+        "label": "Short-Form Video",
+        "detail": "Multiple posts with 200K+ views; peak 29M views on a single video"
+      },
+      "zh": {
+        "label": "短视频创作",
+        "detail": "多条视频播放量超 20 万，单条最高 2900 万播放"
+      }
+    },
+    {
+      "icon": "Code",
+      "en": {
+        "label": "Vibe Coding",
+        "detail": "Independently built multiple 'helper' tools and mini-programs"
+      },
+      "zh": {
+        "label": "Vibe Coding",
+        "detail": "独立制作多款「小助手」类产品及小程序"
+      }
+    }
+  ],
+  "contact": {
+    "en": {
+      "heading": "Say Hello",
+      "description": "Always happy to chat about ideas, projects, or anything in between."
+    },
+    "zh": {
+      "heading": "保持联系",
+      "description": "期待与你交流想法、项目，或任何有趣的事。"
+    },
+    "email": "1234946@wku.edu.cn",
+    "phone": "+86 15267452924",
+    "wechat": "Bingoowin",
+    "links": [
+      {
+        "icon": "FileText",
+        "en": {
+          "label": "View Resume"
+        },
+        "zh": {
+          "label": "查看简历"
+        },
+        "action": "resume-preview"
+      }
+    ]
+  }
+}
