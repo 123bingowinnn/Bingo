@@ -1,0 +1,32 @@
+# Build / dependency artifacts
+node_modules
+.next
+.next.backup-*
+out
+build
+coverage
+
+# Local scratch — design iteration screenshots, reference videos (>100MB),
+# transfer dumps, runtime artifacts, offer letters, etc.
+refs/
+public/images/projects/refs/
+.playwright-mcp/
+output/
+Offer/
+Zoom- Transfer/
+*.png
+*.jpg
+*.jpeg
+*.mov
+*.mp4
+*.pdf
+console-*.md
+REDESIGN.md
+
+# Root-level loose files only — keep /public/*.png, /public/videos/*.mp4,
+# /public/*.pdf etc. by adding negation back in
+!public/**
+!docs/**
+
+# Env
+.env*

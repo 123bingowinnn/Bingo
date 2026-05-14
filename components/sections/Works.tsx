@@ -135,7 +135,7 @@ export function Works() {
         cover: "/images/projects/llm-rejection.jpg",
         monogram: "LR",
         brand: "#60A5FA",
-        href: paper.en.link,
+        href: paper.en.link ?? "/research/llm-negative-rejection",
         external: true,
       };
     })(),
