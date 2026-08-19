@@ -11,6 +11,7 @@ import type { ExperienceItem } from "@/lib/types";
     (/images/zoom.svg etc.); the actual files live under /images/logos/.
     Penghui has no logo — those cards fall back to the generic icon. */
 const LOGO_MAP: Record<string, string> = {
+  "ant-group-ai-pm": "/images/logos/ant-group.png",
   "zoom-pm": "/images/logos/zoom.svg",
   "alibaba-cloud": "/images/logos/alibaba-cloud.svg",
   "deloitte-backend": "/images/logos/deloitte.svg",
@@ -47,7 +48,7 @@ export function ExperienceListClient({
       ? "Internships across product management, software engineering, and data."
       : "涵盖产品管理、软件工程和数据方向的实习经历。";
 
-  // Only the four real internships — keep WKU TA / IT Assistant for a
+  // Only the real internships — keep WKU TA / IT Assistant for a
   // separate page if needed. The title says "Internships", so we filter.
   const internships = experiences.filter(
     (e) => !e.slug.startsWith("wku-"),

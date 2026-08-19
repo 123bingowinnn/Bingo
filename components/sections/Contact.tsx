@@ -1,6 +1,13 @@
 "use client";
 
-import { ArrowUpRight, Mail, Phone, FileText } from "lucide-react";
+import {
+  ArrowUpRight,
+  BookOpen,
+  FileText,
+  Github,
+  Mail,
+  Phone,
+} from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { getContent } from "@/lib/content";
 import { CircularTestimonials, type Facet } from "@/components/ui/circular-testimonials";
@@ -28,8 +35,7 @@ const FACETS_EN: Facet[] = [
       "Good products get written into existence, not just designed. Each pass with the code, the user, and the model nudges the thing closer to what was in my head.",
     name: "AI Product",
     designation: "Crafting · Shipping",
-    // TODO: user will replace with a new portrait
-    src: "/images/portrait/xubin-hero.png",
+    src: "/images/portrait/bingo-facet-product-v1.png",
   },
   {
     quote:
@@ -43,8 +49,7 @@ const FACETS_EN: Facet[] = [
       "Product by day, papers by night. Research is where I get to slow down — the hard questions deserve longer hours than a sprint allows.",
     name: "Researcher",
     designation: "Papers · Models",
-    // TODO: user will replace with a new portrait
-    src: "/images/portrait/bingo-about-badge-angle.png",
+    src: "/images/portrait/bingo-facet-researcher-v1.png",
   },
 ];
 
@@ -54,7 +59,7 @@ const FACETS_ZH: Facet[] = [
       "好的产品是写出来的、不是只画出来的。代码、用户、模型每多走一轮,它就更像我心里的样子。",
     name: "AI 产品",
     designation: "打磨 · 交付",
-    src: "/images/portrait/xubin-hero.png",
+    src: "/images/portrait/bingo-facet-product-v1.png",
   },
   {
     quote:
@@ -68,7 +73,7 @@ const FACETS_ZH: Facet[] = [
       "白天写产品,夜里看 paper。研究让我可以慢下来 —— 复杂的问题值得用比冲刺更长的耐心去想。",
     name: "研究者",
     designation: "论文 · 模型",
-    src: "/images/portrait/bingo-about-badge-angle.png",
+    src: "/images/portrait/bingo-facet-researcher-v1.png",
   },
 ];
 
@@ -102,6 +107,21 @@ export function Contact() {
       <span className="contact-link" data-static title="WeChat ID">
         <WeChatIcon size={15} />
         <span>{content.contact.wechat}</span>
+      </span>
+      <a
+        href="https://github.com/123bingowinnn/"
+        target="_blank"
+        rel="noreferrer"
+        className="contact-link"
+        data-bazil-cursor
+      >
+        <Github size={15} strokeWidth={1.8} />
+        <span>123bingowinnn</span>
+        <ArrowUpRight size={13} strokeWidth={2} className="contact-link__out" />
+      </a>
+      <span className="contact-link" data-static title={lang === "en" ? "Xiaohongshu account" : "小红书账号"}>
+        <BookOpen size={15} strokeWidth={1.8} />
+        <span>{lang === "en" ? "Xiaohongshu" : "小红书"} · 1501875315</span>
       </span>
       <button
         type="button"

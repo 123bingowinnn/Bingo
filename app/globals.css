@@ -16,6 +16,170 @@
   unicode-range: U+4E00-9FFF;
 }
 
+/* Project detail: fan-shaped hackathon photo gallery. */
+.project-hackathon-gallery {
+  margin-top: clamp(5rem, 10vw, 8rem);
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+  border-top: 1px solid rgb(27 27 27 / 0.12);
+}
+
+.project-hackathon-gallery__wide {
+  position: relative;
+  left: 50%;
+  width: min(80rem, calc(100vw - 2rem));
+  transform: translateX(-50%);
+}
+
+.project-hackathon-gallery__heading {
+  width: min(100%, 48rem);
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+.project-hackathon-gallery__heading > span {
+  display: block;
+  margin-bottom: 0.85rem;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: rgb(27 27 27 / 0.46);
+}
+
+.project-hackathon-gallery__heading h2 {
+  margin: 0;
+  font-family: "Noto Sans SC", "NotoSansSC-Hero", var(--font-sans), sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+  color: #1b1b1b;
+}
+
+.project-hackathon-gallery__heading p {
+  margin: 1rem 0 0;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: rgb(27 27 27 / 0.65);
+}
+
+.card-fan-carousel {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding: 1rem 0 0;
+}
+
+.fan-layout {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: clamp(24rem, 50vw, 35rem);
+  align-items: flex-start;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+.fan-card {
+  position: absolute;
+  top: clamp(3rem, 7vw, 5rem);
+  left: 50%;
+  width: clamp(13rem, 26vw, 20rem);
+  aspect-ratio: 4 / 3;
+  margin-left: calc(clamp(13rem, 26vw, 20rem) / -2);
+  overflow: hidden;
+  border: 7px solid #fff;
+  border-radius: 8px;
+  background: #e8e8e8;
+  box-shadow:
+    0 28px 60px -32px rgb(27 27 27 / 0.55),
+    0 8px 20px -12px rgb(27 27 27 / 0.3);
+  transform-origin: center 115%;
+  will-change: transform, opacity;
+}
+
+.fan-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-fan-carousel__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-fan-carousel__controls button {
+  position: relative;
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border: 1px solid rgb(27 27 27 / 0.14);
+  border-radius: 50%;
+  background: rgb(27 27 27 / 0.04);
+  color: rgb(27 27 27 / 0.62);
+  cursor: pointer;
+  transition: 200ms ease;
+}
+
+.card-fan-carousel__controls button:hover {
+  border-color: rgb(27 27 27 / 0.3);
+  background: rgb(27 27 27 / 0.08);
+  color: #1b1b1b;
+}
+
+.card-fan-carousel__controls svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.card-fan-carousel__dots {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.card-fan-carousel__dots span {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: rgb(27 27 27 / 0.15);
+  transition: 200ms ease;
+}
+
+.card-fan-carousel__dots span[data-active="true"] {
+  background: rgb(27 27 27 / 0.72);
+  transform: scale(1.3);
+}
+
+@media (max-width: 640px) {
+  .fan-layout {
+    height: 25rem;
+  }
+
+  .fan-card {
+    top: 4.5rem;
+    width: min(68vw, 17rem);
+    margin-left: calc(min(68vw, 17rem) / -2);
+    border-width: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fan-card {
+    will-change: auto;
+  }
+}
+
 /* ────────────────────────────────────────────────────────────────
    Design Tokens — Dark only, 4 time-of-day variants
    ────────────────────────────────────────────────────────────────
@@ -1148,6 +1312,10 @@ html.lenis body {
     transform 360ms var(--ease-out-expo);
 }
 
+.bazil-hero__logo--ant {
+  height: 26px;
+}
+
 .bazil-hero__logo:hover {
   opacity: 1;
   filter: grayscale(0) contrast(1);
@@ -1822,6 +1990,10 @@ html[data-intro="running"] .command-palette__shell {
     max-width: min(30vw, 8.25rem);
   }
 
+  .bazil-hero__logo--ant {
+    height: 26px;
+  }
+
   .bazil-hero__logo-img {
     max-width: 100%;
   }
@@ -1987,6 +2159,33 @@ html[data-intro="running"] .command-palette__shell {
   position: relative;
   display: grid;
   place-items: center;
+  min-width: 0;
+  overflow: visible;
+}
+
+.about-lanyard-scene {
+  position: relative;
+  width: 100%;
+  height: min(42rem, 78vh);
+  min-height: 34rem;
+  overflow: hidden;
+  isolation: isolate;
+  touch-action: none;
+}
+
+.about-lanyard-scene::after {
+  content: "";
+  position: absolute;
+  right: 29%;
+  bottom: 10%;
+  left: 29%;
+  z-index: -1;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgb(27 27 27 / 0.12);
+  filter: blur(1.2rem);
+  transform: scaleY(0.34);
+  pointer-events: none;
 }
 
 .about-badge-scene {
@@ -5579,6 +5778,12 @@ html[data-intro="running"] .command-palette__shell {
     min-height: 30rem;
   }
 
+  .about-lanyard-scene {
+    width: min(100%, 34rem);
+    height: 40rem;
+    min-height: 40rem;
+  }
+
   .about-copy {
     order: 2;
     max-width: 42rem;
@@ -5633,6 +5838,13 @@ html[data-intro="running"] .command-palette__shell {
 
   .about-badge-scene {
     min-height: 28.5rem;
+  }
+
+  .about-lanyard-scene {
+    width: 100%;
+    height: 34rem;
+    min-height: 34rem;
+    margin-inline: 0;
   }
 
   .about-badge-lanyard {
@@ -11823,7 +12035,7 @@ html[data-intro="running"] .command-palette__shell {
 }
 
 .contact-section__lede {
-  font-family: var(--font-serif), "Instrument Serif", "Noto Serif SC", serif;
+  font-family: "Noto Sans SC", "NotoSansSC-Hero", var(--font-sans), sans-serif;
   font-weight: 400;
   line-height: 1.06;
   letter-spacing: -0.01em;
@@ -11833,7 +12045,7 @@ html[data-intro="running"] .command-palette__shell {
 }
 
 .contact-section__lede[data-lang="zh"] {
-  font-family: "Noto Serif SC", var(--font-serif), serif;
+  font-family: "Noto Sans SC", "NotoSansSC-Hero", var(--font-sans), sans-serif;
   font-weight: 600;
   letter-spacing: 0.005em;
   line-height: 1.18;
@@ -11929,7 +12141,7 @@ html[data-intro="running"] .command-palette__shell {
 /* ----------------------------------------------------------------------
    CircularTestimonials — adapted to white-bg site language. Two-column
    on desktop (rotating photo stack | quote + nav). Single-column on
-   mobile. Serif quote, sans name/designation, lucide arrows.
+   mobile. Site-wide sans typography with lucide arrows.
    ---------------------------------------------------------------------- */
 
 .circular-testimonials {
@@ -11985,10 +12197,10 @@ html[data-intro="running"] .command-palette__shell {
 
 .circular-testimonials__name {
   margin: 0 0 0.4rem;
-  font-family: "Noto Serif SC", var(--font-serif), "Instrument Serif", serif;
+  font-family: "NotoSansSC-Hero", "Noto Sans SC", var(--font-sans), sans-serif;
   font-size: clamp(1.6rem, 2.4vw, 2.1rem);
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  letter-spacing: 0;
   color: #1b1b1b;
   line-height: 1.1;
 }
@@ -11996,13 +12208,11 @@ html[data-intro="running"] .command-palette__shell {
 /* Latin-script run inside a mostly-CJK name. Shrunk + nudged so its
    visual height matches the Chinese characters beside it. */
 .circular-testimonials__name .latin-inline {
-  font-size: 0.82em;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  font-family: var(--font-serif), "Instrument Serif", serif;
+  font-size: 1em;
+  font-weight: inherit;
+  letter-spacing: 0;
+  font-family: inherit;
   font-style: normal;
-  position: relative;
-  top: -0.04em;
 }
 
 .circular-testimonials__designation {

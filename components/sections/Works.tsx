@@ -50,6 +50,35 @@ export function Works() {
   // it'll override the poster automatically.
   const WORKS: Work[] = [
     (() => {
+      const p = projectBySlug.get("unnote")!;
+      return {
+        slug: "unnote",
+        kind: "project",
+        title: { en: p.en.title, zh: p.zh.title },
+        subtitle: { en: p.tags.join(" · "), zh: p.tags.join(" · ") },
+        cover: "/images/projects/unnote-cover-v2.png",
+        monogram: "UN",
+        brand: "#58A9F7",
+        href: `/projects/${p.slug}`,
+      };
+    })(),
+    (() => {
+      const p = projectBySlug.get("chushou-keju")!;
+      return {
+        slug: "chushou-keju",
+        kind: "project",
+        title: { en: p.en.title, zh: p.zh.title },
+        subtitle: {
+          en: "Douyin AI Innovators Program Hackathon Project · National 3rd Prize",
+          zh: "抖音 AI 创变者计划黑客松作品 · 全国三等奖",
+        },
+        cover: "/images/projects/chushou-keju-cover-v1.png",
+        monogram: "TD",
+        brand: "#C89557",
+        href: `/projects/${p.slug}`,
+      };
+    })(),
+    (() => {
       const p = projectBySlug.get("digital-human-dementia")!;
       return {
         slug: "digital-human-dementia",

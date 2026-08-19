@@ -134,14 +134,64 @@
       "headline": "产品、工程、研究，",
       "headlineAccent": "都是解决问题的方式。",
       "paragraphs": [
-        "我喜欢做别人真正愿意用的产品。先后在 Zoom 做 AI 产品实习、在阿里云做数据产品运营、在德勤做后端开发——每一段都让我更理解好的软件是怎么长出来的。",
+        "我喜欢做别人真正愿意用的产品。现在在蚂蚁集团做 AI 产品实习，此前在 Zoom 做 AI 产品、在阿里云做数据产品运营，也在德勤做过后端开发——每一段都让我更理解好的软件是怎么长出来的。",
         "业余做一些研究，主要关注大语言模型和医学影像方向，发表了几篇论文。",
-        "工作之外喜欢跑步、健身、拍短视频。有一条莫名其妙到了 2900 万播放。",
+        "工作之外喜欢跑步、健身、拍短视频，有一条视频莫名其妙到了 2900 万播放。也喜欢参加黑客松，曾获抖音黑客松全国三等奖。我喜欢那种从一个模糊的想法出发，在有限时间里把它真正做出来的过程。",
         "今年秋天去耶鲁大学读硕士。"
       ]
     }
   },
   "experience": [
+    {
+      "slug": "ant-group-ai-pm",
+      "tags": [
+        "PM",
+        "AI"
+      ],
+      "logo": "/images/logos/ant-group.png",
+      "en": {
+        "company": "Ant Group",
+        "role": "AI Product Intern",
+        "period": "Jun 2026 – Present",
+        "location": "Hangzhou, China",
+        "summary": "Contributed to Huabei's proactive AI service and AI Coding productization, focusing on proactive bill-refund assistance and a digital raffle system for offline events.",
+        "bullets": [
+          "Proactive refund service: connected new complaint analysis, a multi-Agent solution workflow, AI Coding-generated explanatory cards, algorithmic matching, and Huaxiaobei AI follow-up to surface contextual help before users ask, with a 30% reduction in refund-related complaint rate per 10,000 users as the core target",
+          "Intent and blockage identification: analyzed 30,000+ complaint samples on a T+1 cadence, combining user voice and behavior paths to decompose issues into intent, expectation, and decision blockages and continuously update the knowledge base",
+          "Agent Team workflow: designed role-based collaboration and output standards across user perspective, business rules, and professional review, following diagnosis, rule verification, solution generation, and review to produce structured inputs for AI Coding",
+          "AI Coding and delivery strategy: connected approved solutions to the card-generation pipeline, defined explanatory content and dynamic fields such as amount and billing period, produced about 1,000 cards, and specified scenarios, training features, labels, and evaluation criteria for personalized triggering and Huaxiaobei integration",
+          "Offline event digitization: used AI Coding to launch an electronic raffle system that replaced manual paper-based eligibility checks and made inventory and redemption records traceable"
+        ],
+        "techStack": [
+          "Proactive AI Service",
+          "Multi-Agent",
+          "AI Coding",
+          "Intent Analysis",
+          "Model Evaluation"
+        ]
+      },
+      "zh": {
+        "company": "蚂蚁集团",
+        "role": "花呗 AI 产品经理（暑期实习）",
+        "period": "2026.06 – 至今",
+        "location": "杭州",
+        "summary": "参与花呗 AI 主动服务产品建设及 AI Coding 产品化探索，重点推进账单退款主动服务和线下活动抽奖系统。",
+        "bullets": [
+          "花呗账单退款 AI 主动服务：打通“新增客诉分析—多 Agent 形成方案—AI Coding 生成解释性卡片—算法匹配展示—花小呗 AI 承接”的主动服务链路，在用户求助前提供与当前场景匹配的解释性卡片，以退款相关万求率降低 30% 为核心目标",
+          "意图卡点识别：基于覆盖 3 万+用户的客诉样本，按 T+1 节奏分析新增客诉、用户原声与行为路径，将问题拆解为意图、预期与判断卡点，并持续更新意图卡点库",
+          "Agent Team 问题研判：设计由用户视角、业务规则和专业审核等角色组成的协作流程与输出标准，按照“问题诊断—规则核验—方案生成—方案评审”输出结构化解决方案，作为 AI Coding 的输入",
+          "AI Coding 与触发策略：打通方案到卡片的生成链路，明确解释内容、金额与账期等动态字段，累计产出约 1000+ 卡片；定义业务场景、训练特征、样本标签与评测标准，协同算法团队优化卡片展示准确性并推进接入花小呗 AI",
+          "线下活动抽奖系统数字化：针对纸质抽奖资格依赖人工核验、库存及兑奖记录难追溯的问题，通过 AI Coding 上线电子抽奖系统"
+        ],
+        "techStack": [
+          "AI 主动服务",
+          "Multi-Agent",
+          "AI Coding",
+          "意图分析",
+          "模型评测"
+        ]
+      }
+    },
     {
       "slug": "zoom-pm",
       "tags": [
@@ -150,45 +200,49 @@
       ],
       "logo": "/images/zoom.svg",
       "en": {
-        "company": "Zoom Communications (Present)",
+        "company": "Zoom Communications",
         "role": "AI Product Manager Intern",
-        "period": "Dec 2025 – Present",
+        "period": "Dec 2025 – May 2026",
         "location": "Hangzhou, China",
-        "summary": "From zero to one: led an AI product from PRD to launch, orchestrating cross-functional teams and building the evaluation framework that now guides product iteration.",
+        "summary": "Worked on Zoom Slides and its evaluation system: contributed to core product capabilities and launch, then built reusable evaluation standards and automated tools to support quality iteration.",
         "bullets": [
-          "Led requirements planning and delivery for Zoom Present AI editing features and mobile full-flow design, producing 6+ core PRDs and coordinating cross-functional reviews across product, design, frontend, backend, and QA teams",
-          "Designed data instrumentation schemas for key features (e.g., slide insertion, search), defining trigger sources, parameter fields, success/failure criteria, and funnel event chains to support adoption rate, success rate, and undo behavior monitoring",
-          "Conducted 5+ competitive analyses covering Gamma, Genspark, Manus, AnyGen, and Skywork — benchmarking AI PPT generation speed and interaction paths to quantify gaps and inform product iteration priorities",
-          "Built a multi-dimensional PPT generation quality evaluation framework covering content quality, design performance, and narrative structure, using LLM Judge with fixed prompts for reproducible scoring; explored Opus4.6 OOXML advantages to validate Zoom Present fast-mode feasibility"
+          "Zoom Slides from 0 to 1: contributed to the full flow from content input and AI PPT generation to conversational editing, viewing, and presenting, with primary ownership of the generation flow, conversational editing, and mobile presentation",
+          "Generation experience: used competitor speed tests and stage-by-stage analysis to locate long waits, invisible progress, and unrecoverable unfinished tasks; designed visible per-slide progress and task recovery, and aligned with engineering on first-slide priority plus parallel generation for later slides",
+          "Conversational editing and guidance: designed and advanced natural-language slide insertion, cross-slide find-and-replace, image search, and selected-object editing; added one-click example prompts and instrumentation for exposure, click, execution, and undo to evaluate adoption, success, and rollback rates",
+          "Mobile experience: designed the end-to-end home, file detail, read-only viewing, sharing, and landscape presentation flow, and followed the work through review, development, and launch acceptance",
+          "AI PPT evaluation: established standards spanning speed, content, design, structure, imagery, templates, and factual accuracy, comparing input modes, deck sizes, and competitors to identify generation, image, and template issues",
+          "Automated evaluation Skills: developed six evaluation Skills for sample generation, PPT content extraction, AI scoring, and report output, converting repetitive manual evaluation into a batch-executable semi-automated workflow"
         ],
         "techStack": [
-          "PRD",
-          "Jira",
-          "Figma",
+          "AI PPT",
+          "Conversational Editing",
+          "Mobile Product",
           "Data Instrumentation",
-          "LLM Evaluation",
-          "Competitive Analysis"
+          "AI Evaluation",
+          "Evaluation Skills"
         ]
       },
       "zh": {
         "company": "数沐软件（杭州）/ Zoom",
         "role": "AI 产品经理实习生",
-        "period": "2025.12 – 至今",
+        "period": "2025.12 – 2026.05",
         "location": "杭州",
-        "summary": "从 0 到 1：主导 AI 产品从 PRD 到上线的全流程，协调跨职能团队协作，搭建了现指导产品迭代的评测体系。",
+        "summary": "在 Zoom 负责 AI PPT 产品 Zoom Slides 及其 Eval 评测体系建设：前期参与核心产品能力设计与上线，后期搭建评测标准与自动化评测工具，以支持产品质量迭代。",
         "bullets": [
-          "负责 Zoom Present AI 编辑能力与移动端全流程设计需求的推进，主导输出 6+ 核心 PRD，组织多场跨产品、设计、前后端、测试评审对齐范围与方案，参与上线验收闭环",
-          "围绕核心需求制定数据采集方案并与数据工程师对齐，针对插页、查找等能力定义触发来源、参数字段与成功失败口径，明确漏斗事件链路，支撑采用率、成功率与撤回行为监控",
-          "完成 5+ 竞品分析，覆盖 Gamma、Genspark、Manus、AnyGen、Skywork 等产品的 AI PPT 生成速度测评与交互路径对比，量化差距为产品迭代提供方向",
-          "构建覆盖内容质量、设计表现与叙事结构的 PPT 生成质量评测体系，采用 LLM Judge 固定提示词实现可复现打分；探索 Opus4.6 OOXML 优势以论证 Zoom Present 快速模式可行性"
+          "Zoom Slides 从 0 到 1：参与“内容输入—AI 生成 PPT—通过对话修改—查看与演示”的完整链路建设，重点负责生成流程、对话修改及移动端演示功能",
+          "优化 AI PPT 生成体验：通过竞品测速分析和生成阶段拆解定位等待时间长、过程不可见及未完成任务难找回等卡点；设计可视化逐页生成进度与任务返回机制，并协同研发确定“首张页面优先、后续页面并行”的生成方案",
+          "上线 AI 对话编辑与功能引导：负责自然语言插页、跨页查找替换文字、图片搜索及选中对象修改等功能设计与推进；支持示例指令一键填入，并设置曝光、点击、执行结果及撤回埋点，通过采用率、成功率和撤回率评估效果",
+          "设计移动端查看与演示体验：负责“首页—文件详情—只读浏览—分享—横屏演示”全流程设计，并推进方案评审、开发跟进与上线验收",
+          "搭建 AI PPT 评测体系：从生成速度、内容、设计、结构、配图、模板和事实准确性等维度建立标准化评测流程，通过不同输入方式、页数规模及竞品对比定位生成慢、配图不准确和模板使用不稳定等问题",
+          "开发自动化评测 Skill：开发 6 套评测 Skill，自动完成测试样本生成、PPT 内容读取、AI 评分和报告输出，将重复的人工评测转为可批量执行的半自动流程"
         ],
         "techStack": [
-          "PRD",
-          "Jira",
-          "Figma",
+          "AI PPT",
+          "对话编辑",
+          "移动端产品",
           "数据埋点",
-          "LLM 评测",
-          "竞品分析"
+          "AI 评测",
+          "评测 Skill"
         ]
       }
     },
@@ -429,6 +483,107 @@
     }
   ],
   "projects": [
+    {
+      "slug": "unnote",
+      "tags": [
+        "AI Product",
+        "macOS",
+        "Agent"
+      ],
+      "featured": true,
+      "image": "/images/projects/unnote-cover-v2.png",
+      "video": "/videos/unnote-demo.mp4",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/123bingowinnn/UnNote"
+        }
+      ],
+      "en": {
+        "title": "UnNote — Capture-First AI Todo for macOS",
+        "summary": "A local-first macOS app that turns a quick thought, voice note, or screenshot into a structured todo without interrupting the work already in progress.",
+        "problem": "Tasks often surface inside chats, meetings, documents, and browser tabs. Opening a full task manager, choosing fields, and rewriting the context adds enough friction that important work is easily lost. Voice notes and screenshots capture the moment, but still leave the user to organize everything later.",
+        "action": "Designed and built a capture-first workflow around the Option key: tap to type, hold to speak, or use the right Option key to capture the screen. An AI agent routes natural-language input into create, revise, complete, delete, and search actions, including multi-command batches. The native SwiftUI and AppKit interface uses a quiet floating capsule, todo panel, smart reminders, and reversible confirmations. Core routing, model providers, deadline normalization, and local JSON storage are separated from the macOS presentation layer.",
+        "result": "Delivered an open-source macOS prototype with three capture modes, a single natural-language command surface, streaming speech recognition, screenshot understanding, and local-first todo storage. The product demo shows the full path from an in-context capture to a structured task and reminder while keeping the user in the current workflow.",
+        "learnings": "The project clarified how an AI agent can compress interaction rather than add another dashboard. Reliable routing, structured outputs, undo paths, permissions, and quiet feedback proved as important as model capability when building a system-native product people can trust.",
+        "techStack": [
+          "Swift",
+          "SwiftUI",
+          "AppKit",
+          "LLM Agent",
+          "Vision Understanding",
+          "Streaming ASR",
+          "Local-first Storage",
+          "macOS"
+        ]
+      },
+      "zh": {
+        "title": "UnNote — 即刻捕获的 AI 待办 Agent",
+        "summary": "一款 local-first 的 macOS 应用，把随手输入、语音或屏幕截图直接变成结构化待办，让记录发生在任务出现的那一刻，而不是打断当前工作。",
+        "problem": "很多任务藏在聊天、会议、文档和浏览器页面里。为了记录一件事而打开完整的待办应用、填写字段、重新整理上下文，会产生足够高的操作成本；语音和截图虽然留住了信息，却仍把整理工作留给了之后的自己。",
+        "action": "围绕 Option 键设计并实现了 capture-first 交互：轻按输入、长按说话、右侧 Option 截图。AI Agent 将自然语言路由为创建、修改、完成、删除和搜索等动作，并支持一条指令批量处理多个任务。原生 SwiftUI 与 AppKit 界面由浮动捕获胶囊、待办面板、智能提醒和可撤销反馈组成；模型接入、意图路由、时间归一化与本地 JSON 存储则被拆分到独立核心层。",
+        "result": "完成了可开源运行的 macOS 产品原型，串联文字、语音、截图三种捕获方式，以及流式语音识别、截图理解、自然语言指令和本地待办存储。产品演示完整呈现了从当前场景捕获信息，到生成结构化任务与提醒的端到端体验。",
+        "learnings": "这个项目让我更清楚地理解：AI Agent 的价值不是再增加一个复杂面板，而是压缩完成一件事所需的交互。对于系统级产品，稳定的路由、结构化输出、撤销机制、权限处理和克制的反馈，与模型能力同样重要。",
+        "techStack": [
+          "Swift",
+          "SwiftUI",
+          "AppKit",
+          "LLM Agent",
+          "视觉理解",
+          "流式语音识别",
+          "本地优先存储",
+          "macOS"
+        ]
+      }
+    },
+    {
+      "slug": "chushou-keju",
+      "tags": [
+        "AI Product",
+        "Interactive Story",
+        "Hackathon"
+      ],
+      "featured": true,
+      "image": "/images/projects/chushou-keju-cover-v1.png",
+      "video": "/videos/chushou-keju-demo.mp4",
+      "links": [],
+      "en": {
+        "title": "Touch Drama — Interactive Short Stories You Can Act On",
+        "summary": "National Third Prize and RMB 30,000 winner at the Douyin AI Innovators Program Hackathon. A first-person interactive short-drama platform that turns viewers into protagonists, with the AI short-drama generation workflow packaged into reusable production Skills.",
+        "problem": "Traditional short dramas deliver fast emotion but keep the audience at a distance. Even most interactive formats reduce participation to detached A/B/C choices: the scene does not respond immediately, the path rarely feels personal, and the experience ends once the final clip plays. The product question was how to turn someone from a person watching the story into the person making it happen.",
+        "action": "Designed a vertical first-person POV experience in which users tap, hold, swipe, drag, or repeatedly tap characters and objects inside the scene to receive a letter, secure a lock, organize evidence, protect someone, or fight back. A shared story-state engine tracks nodes, props, clues, relationships, branches, history, and completion, enabling replay from unlocked moments. We also built a script marketplace across suspense, emotional, action, cathartic, and healing genres, plus an AI behavioral report generated from each user's actual route. On the creator side, we converted the workflow for branching scripts, storyboards, images, video, voices, interaction frames, and feedback clips into reusable AI production Skills, making multi-branch short-drama generation more repeatable.",
+        "result": "Built an end-to-end prototype spanning discovery, immersive playback, gesture interactions, 1–3 second scene feedback, branch exploration, history, and personalized story-personality reports. The project won National Third Prize in the Douyin AI Innovators Program Hackathon and received RMB 30,000 in prize money. More importantly, the reusable interaction system and production Skills moved the concept from a single demo toward an extensible interactive-content platform.",
+        "learnings": "The strongest interaction is not asking what the protagonist should do, but letting the user perform the action. The project also showed that an AI content product needs two products at once: an expressive audience experience and a scalable creator workflow. State design, immediate audiovisual feedback, and reusable Skills were the bridge between the two.",
+        "techStack": [
+          "Generative AI",
+          "AI Production Skills",
+          "First-person Video",
+          "Gesture Interaction",
+          "Canvas Mini-games",
+          "Story State Engine",
+          "Behavior Analysis",
+          "Mobile Web"
+        ]
+      },
+      "zh": {
+        "title": "触手可剧 — 让用户亲手推动剧情",
+        "summary": "抖音 AI 创变者计划黑客松全国三等奖作品，获奖金 3 万元。一套让用户亲手推动剧情的第一人称互动短剧体验，并将 AI 自动生成短剧的完整流程 Skill 化为可复用的生产能力。",
+        "problem": "传统短剧节奏快、情绪强，但用户始终与内容隔着一层。即使加入互动，常见方案也只是弹出 A/B/C 选项：操作与画面割裂，选择缺少即时回应，结果往往只改变结局，一条路线结束后也缺少继续探索的动力。我们想解决的核心问题是：如何让用户从“看短剧的人”，变成“推动剧情发生的人”。",
+        "action": "设计了沉浸式竖屏第一人称 POV 体验，把点击、长按、滑动、拖动和连续点击直接放进人物、道具与场景中，让用户亲手接过信件、按住门锁、整理证据、保护角色或完成反击。统一的剧情状态系统持续管理节点、道具、线索、人物关系、分支、历史记录与通关状态，并支持从已解锁节点重新探索。产品同时提供覆盖爽感、悬疑、情感、热血与治愈等题材的剧本集市，以及基于用户真实行为路径生成的 AI“剧本人格”。在创作侧，我们进一步把分支剧本、分镜、图像、视频、声音、交互起始帧与反馈片段的自动生成流程 Skill 化，沉淀为可复用的 AI 短剧生产 Skills。",
+        "result": "完成了从剧本发现、沉浸播放、场景内操作、约 1–3 秒即时反馈，到分支回溯、历史记录和个性化人格报告的端到端原型。项目获得抖音 AI 创变者计划黑客松全国三等奖，并获得 3 万元奖金。更重要的是，可复用的互动系统与生产 Skills 让产品不再只是一部 Demo，而具备继续扩展为互动内容平台的基础。",
+        "learnings": "真正有沉浸感的互动，不是询问用户“主角应该怎么做”，而是让用户把那个动作亲手做出来。这个项目也让我意识到，AI 内容产品需要同时设计两端：面向用户的表达力，以及面向创作者的规模化生产能力；剧情状态、即时视听反馈和可复用 Skills，正是连接两端的关键。",
+        "techStack": [
+          "生成式 AI",
+          "AI 生产 Skills",
+          "第一人称视频",
+          "手势交互",
+          "Canvas 小游戏",
+          "剧情状态引擎",
+          "行为分析",
+          "移动端 Web"
+        ]
+      }
+    },
     {
       "slug": "digital-human-dementia",
       "tags": [

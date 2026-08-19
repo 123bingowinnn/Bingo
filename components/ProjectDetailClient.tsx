@@ -7,6 +7,36 @@ import type { ProjectItem } from "@/lib/types";
 import { useI18n } from "@/lib/i18n";
 import { Badge } from "@/components/ui/badge";
 import { SectionWrapper } from "@/components/SectionWrapper";
+import CardFanCarousel, {
+  type CardItem,
+} from "@/components/ui/card-fan-carousel";
+
+const CHUSHOU_KEJU_GALLERY: CardItem[] = [
+  {
+    imgUrl: "/images/projects/chushou-keju-gallery/team-lounge.png",
+    alt: "破壁人团队在抖音 AI 创变者计划黑客松现场",
+  },
+  {
+    imgUrl: "/images/projects/chushou-keju-gallery/team-signs.png",
+    alt: "破壁人团队黑客松合影",
+  },
+  {
+    imgUrl: "/images/projects/chushou-keju-gallery/third-prize.png",
+    alt: "团队获得抖音 AI 创变者计划黑客松全国三等奖",
+  },
+  {
+    imgUrl: "/images/projects/chushou-keju-gallery/stage-team.png",
+    alt: "触手可剧项目团队舞台合影",
+  },
+  {
+    imgUrl: "/images/projects/chushou-keju-gallery/youth-award.png",
+    alt: "黑客松青年共鸣奖现场合影",
+  },
+  {
+    imgUrl: "/images/projects/chushou-keju-gallery/hackathon-wall.png",
+    alt: "抖音 AI 创变者计划黑客松创作者签名墙",
+  },
+];
 
 function ProjectVideo({ video, lang }: { video: string; lang: "en" | "zh" }) {
   const [expanded, setExpanded] = useState(false);
@@ -47,7 +77,7 @@ export default function ProjectDetailClient({ project }: { project: ProjectItem 
   const p = project[lang];
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-36 sm:pt-40 pb-16">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <Link
           href="/#works"
@@ -188,6 +218,29 @@ export default function ProjectDetailClient({ project }: { project: ProjectItem 
             </div>
           </SectionWrapper>
         </div>
+
+        {project.slug === "chushou-keju" && (
+          <SectionWrapper className="project-hackathon-gallery" delay={0.35}>
+            <div className="project-hackathon-gallery__wide">
+              <div className="project-hackathon-gallery__heading">
+                <span>
+                  {lang === "en" ? "/ HACKATHON MOMENTS" : "/ 黑客松现场"}
+                </span>
+                <h2>
+                  {lang === "en"
+                    ? "Built together, under the clock."
+                    : "一起把想法做出来。"}
+                </h2>
+                <p>
+                  {lang === "en"
+                    ? "Team Po Bi Ren at the Douyin AI Innovators Program Hackathon, from building through the final award ceremony."
+                    : "破壁人在抖音 AI 创变者计划黑客松的现场记录，从并肩创作到站上领奖台。"}
+                </p>
+              </div>
+              <CardFanCarousel cards={CHUSHOU_KEJU_GALLERY} />
+            </div>
+          </SectionWrapper>
+        )}
       </div>
     </div>
   );

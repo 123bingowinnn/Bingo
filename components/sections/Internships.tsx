@@ -37,7 +37,7 @@ const STOPS: Stop[] = [
   {
     slug: "penghui-bigdata",
     timeRatio: 0,
-    pos: { x: 14, y: 22 },
+    pos: { x: 15, y: 31 },
     popDir: "below",
     brand: "#3F7CAC",
     city: { en: "Shanghai", zh: "上海" },
@@ -56,8 +56,8 @@ const STOPS: Stop[] = [
   },
   {
     slug: "deloitte-backend",
-    timeRatio: 0.25,
-    pos: { x: 36, y: 80 },
+    timeRatio: 0.2,
+    pos: { x: 34, y: 77 },
     popDir: "above",
     brand: "#86BC25",
     city: { en: "Hangzhou", zh: "杭州" },
@@ -82,9 +82,9 @@ const STOPS: Stop[] = [
   },
   {
     slug: "alibaba-cloud",
-    timeRatio: 0.5,
-    pos: { x: 60, y: 22 },
-    popDir: "below",
+    timeRatio: 0.4,
+    pos: { x: 67, y: 76 },
+    popDir: "above",
     brand: "#FF6A00",
     city: { en: "Hangzhou", zh: "杭州" },
     company: { en: "Alibaba Cloud", zh: "阿里云" },
@@ -108,14 +108,14 @@ const STOPS: Stop[] = [
   },
   {
     slug: "zoom-pm",
-    timeRatio: 0.75,
-    pos: { x: 84, y: 78 },
-    popDir: "above",
+    timeRatio: 0.6,
+    pos: { x: 87, y: 31 },
+    popDir: "below",
     brand: "#0B5CFF",
     city: { en: "Hangzhou", zh: "杭州" },
     company: { en: "Zoom", zh: "Zoom" },
-    period: { en: "Dec 2025 — Now", zh: "2025.12 — 至今" },
-    tagline: { en: "AI Product · live now", zh: "AI 产品 · 进行中" },
+    period: { en: "Dec 2025 — May 2026", zh: "2025.12 — 2026.05" },
+    tagline: { en: "AI Product · from zero to one", zh: "AI 产品 · 从 0 到 1" },
     mainPhoto: "/images/internships/zoom-pm/cover.jpg",
     mainAlt: {
       en: "Workstation with Zoom Present AI on screen",
@@ -131,6 +131,29 @@ const STOPS: Stop[] = [
     },
     logo: "/images/logos/zoom.svg",
     shortName: { en: "Zoom", zh: "Zoom" },
+  },
+  {
+    slug: "ant-group-ai-pm",
+    timeRatio: 0.8,
+    pos: { x: 55, y: 24 },
+    popDir: "below",
+    brand: "#1677FF",
+    city: { en: "Hangzhou", zh: "杭州" },
+    company: { en: "Ant Group", zh: "蚂蚁集团" },
+    period: { en: "Jun 2026 — Present", zh: "2026.06 — 至今" },
+    tagline: { en: "AI Product · in progress", zh: "AI 产品 · 进行中" },
+    mainPhoto: "/images/internships/ant-group-ai-pm/badge.jpg",
+    mainAlt: {
+      en: "Bingo's Ant Group intern badge",
+      zh: "孙徐斌的蚂蚁集团实习工牌",
+    },
+    extraPhotos: [
+      "/images/internships/ant-group-ai-pm/team-cake.jpg",
+      "/images/internships/ant-group-ai-pm/desk-calendar.jpg",
+    ],
+    role: { en: "AI Product Intern", zh: "AI 产品实习生" },
+    logo: "/images/logos/ant-group.png",
+    shortName: { en: "Ant", zh: "蚂蚁" },
   },
 ];
 
@@ -274,8 +297,8 @@ export function Internships() {
         </h2>
         <p className="trail-stage__sub">
           {lang === "en"
-            ? "Four teams. Two cities."
-            : "四家公司,两座城市。"}
+            ? "Five teams. Two cities."
+            : "五家公司,两座城市。"}
         </p>
       </header>
 
@@ -297,7 +320,7 @@ export function Internships() {
           <video
             ref={videoRef}
             className="trail-video"
-            src="/videos/internship-trail/full-loop.mp4"
+            src="/videos/internship-trail/full-loop-v2.mp4"
             muted
             playsInline
             preload="auto"

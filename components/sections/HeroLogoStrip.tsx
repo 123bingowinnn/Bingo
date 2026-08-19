@@ -8,6 +8,7 @@ const LOGOS = [
   { name: "Zoom", src: "/images/logos/zoom.svg", width: 120, height: 28 },
   { name: "Alibaba Cloud", src: "/images/logos/alibaba-cloud.svg", width: 168, height: 22 },
   { name: "Deloitte", src: "/images/logos/deloitte.svg", width: 124, height: 26 },
+  { name: "Ant Group", src: "/images/logos/ant-group.png", width: 1285, height: 551 },
 ] as const;
 
 const LABEL = {
@@ -16,8 +17,8 @@ const LABEL = {
 } as const;
 
 const ARIA_LABEL = {
-  en: "Previously interned at Zoom, Alibaba Cloud, and Deloitte",
-  zh: "曾实习于 Zoom、阿里云、德勤",
+  en: "Previously interned at Zoom, Alibaba Cloud, Deloitte, and Ant Group",
+  zh: "曾实习于 Zoom、阿里云、德勤、蚂蚁集团",
 } as const;
 
 export function HeroLogoStrip() {
@@ -37,7 +38,11 @@ export function HeroLogoStrip() {
       </span>
       <ul className="bazil-hero__logos-row">
         {LOGOS.map((logo) => (
-          <li key={logo.name} className="bazil-hero__logo" title={logo.name}>
+          <li
+            key={logo.name}
+            className={`bazil-hero__logo${logo.name === "Ant Group" ? " bazil-hero__logo--ant" : ""}`}
+            title={logo.name}
+          >
             <Image
               src={logo.src}
               alt={logo.name}
