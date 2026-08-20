@@ -12,7 +12,7 @@ type Route = { match: RegExp; reply: string };
 export const FAQ_ROUTES_EN: Route[] = [
   // ── Identity / who-are-you ────────────────────────────────────────────
   { match: /who('?s| is) bingo|who('?s| is) xubin|tell me about (him|bingo|xubin)|introduce|about (him|you|bingo|xubin)/i,
-    reply: "About Bingo ✦\n• Xubin (Bingo) Sun — heading to Yale for an M.S. in CS, Fall 2026\n• Currently AI Product Manager Intern at Zoom\n• 3 SCI papers · 4 internships · 6 grad-school offers\n*tail wag* — product + engineering + research, one human." },
+    reply: "About Bingo ✦\n• Xubin (Bingo) Sun — heading to Yale for an M.S. in CS, Fall 2026\n• Currently building AI products at Ant Group\n• 3 papers · 5 internships · 6 grad-school offers\n*tail wag* — product + engineering + research, one human." },
 
   // ── Pet's own identity ────────────────────────────────────────────────
   { match: /who are you|your name|what are you|pet|you('?re| are) cute/i,
@@ -29,9 +29,13 @@ export const FAQ_ROUTES_EN: Route[] = [
   { match: /wku|wenzhou|kean|undergrad|bachelor|学校|温州/i,
     reply: "Undergrad ✦\n• Wenzhou-Kean University — BSc Computer Science, 2022–2026\n• US-curriculum joint campus in Wenzhou, China\n• Worked as TA + library IT assistant on the side\n*tail wag* foundation years." },
 
-  // ── Zoom (current) ────────────────────────────────────────────────────
-  { match: /zoom|current.*intern|right now|now.*work/i,
-    reply: "Zoom — current ✦\n• AI Product Manager Intern, Dec 2025 → present\n• Owning PRDs from zero to launch on AI features\n• Built an LLM-Judge eval framework for Zoom Present\n*chest puff* his daily mission." },
+  // ── Ant Group (current) ───────────────────────────────────────────────
+  { match: /ant group|huabei|current.*intern|right now|now.*work/i,
+    reply: "Ant Group — current ✦\n• Huabei AI Product Manager Intern, Jun 2026 → present\n• Building proactive refund support with a multi-agent workflow\n• Helped turn structured solutions into about 1,000 AI-generated explanation cards\n*ears up* the newest chapter." },
+
+  // ── Zoom ──────────────────────────────────────────────────────────────
+  { match: /zoom|zoom slides|ai ppt/i,
+    reply: "Zoom Slides ✦\n• AI Product Manager Intern, Dec 2025 → May 2026\n• Built generation, conversational editing and mobile presentation flows\n• Developed 6 reusable evaluation Skills for AI slides\n*chest puff* a full zero-to-one chapter." },
 
   // ── Alibaba Cloud ─────────────────────────────────────────────────────
   { match: /alibaba|aliyun|dataphin|lingyang|storylane/i,
@@ -61,7 +65,7 @@ export const FAQ_ROUTES_EN: Route[] = [
 
   // ── Projects overall ──────────────────────────────────────────────────
   { match: /project(s)?|portfolio|works|build something|what.*build/i,
-    reply: "Projects ✦\n• Digital Human — dementia-care companion\n• Plant Disease — Grad-CAM + LLM (91% accuracy)\n• Fridge Clear — vibe-coded fridge helper\n• Plus the 3 research builds (PathMNIST / OCTMNIST / Rejection)\n*spin* scroll to /projects to play with them." },
+    reply: "Projects ✦\n• Chushou Keju — award-winning first-person interactive AI drama\n• UnNote — quick-capture AI todo agent\n• Digital Human — dementia-care companion\n• Plus research in LLM behavior and medical imaging\n*spin* open /projects for the demos." },
 
   // ── Individual projects ───────────────────────────────────────────────
   { match: /digital human|dementia|companion|elderly/i,
@@ -121,7 +125,7 @@ export const FAQ_ROUTES_EN: Route[] = [
 export const FAQ_ROUTES_ZH: Route[] = [
   // ── 自我介绍 ──────────────────────────────────────────────────────────
   { match: /他是谁|是谁|介绍|自我介绍|关于他|关于你|tell me/i,
-    reply: "关于 Bingo ✦\n• 孙徐斌（Bingo） —— 2026 秋季入读耶鲁 CS 硕士\n• 当前在 Zoom 做 AI 产品经理实习\n• 3 篇 SCI 论文 · 4 段实习 · 6 所 offer\n*摇尾巴* 产品 + 工程 + 研究，一个人三个能力。" },
+    reply: "关于 Bingo ✦\n• 孙徐斌（Bingo） —— 2026 秋季入读耶鲁 CS 硕士\n• 当前在蚂蚁集团做 AI 产品实习\n• 3 篇论文 · 5 段实习 · 6 所 offer\n*摇尾巴* 产品 + 工程 + 研究，一个人三个能力。" },
 
   // ── 宠物自己 ──────────────────────────────────────────────────────────
   { match: /你是谁|你叫|宠物|你好可爱|你是什么/i,
@@ -138,9 +142,13 @@ export const FAQ_ROUTES_ZH: Route[] = [
   { match: /本科|学校|温肯|wku|温州|kean/i,
     reply: "本科 ✦\n• 温州肯恩大学 —— 计算机科学学士，2022–2026\n• 美式课程，中美合办校区\n• 同时做过 TA + 图书馆 IT 助理\n*摇尾巴* 打底子的四年。" },
 
-  // ── Zoom（当前）─────────────────────────────────────────────────────
-  { match: /zoom|现在|当前|现在.*实习|目前/i,
-    reply: "Zoom — 当前实习 ✦\n• AI 产品经理实习生，2025 年 12 月至今\n• 从 0 到 1 主导 AI 功能的 PRD 与上线\n• 搭了一套 LLM-Judge 评测体系给 Zoom Present\n*挺起小胸膛* 现在的主战场。" },
+  // ── 蚂蚁（当前）─────────────────────────────────────────────────────
+  { match: /蚂蚁|花呗|现在|当前|现在.*实习|目前/i,
+    reply: "蚂蚁集团 — 当前实习 ✦\n• 花呗 AI 产品经理实习生，2026 年 6 月至今\n• 用多 Agent 流程推进退款主动服务\n• 已协同产出约 1000 张 AI 解释卡片\n*耳朵立起来* 最新的一站。" },
+
+  // ── Zoom ──────────────────────────────────────────────────────────────
+  { match: /zoom|zoom slides|ai ppt/i,
+    reply: "Zoom Slides ✦\n• AI 产品经理实习，2025 年 12 月至 2026 年 5 月\n• 参与生成、对话编辑和移动端演示全链路\n• 开发 6 套可复用的 AI PPT 评测 Skill\n*挺起小胸膛* 完整的从 0 到 1。" },
 
   // ── 阿里 ──────────────────────────────────────────────────────────────
   { match: /阿里|alibaba|aliyun|dataphin|瓴羊|storylane/i,
@@ -170,7 +178,7 @@ export const FAQ_ROUTES_ZH: Route[] = [
 
   // ── 项目总览 ──────────────────────────────────────────────────────────
   { match: /项目|product|portfolio|作品|做过什么|build|建过/i,
-    reply: "项目 ✦\n• 数字人 —— 痴呆症陪伴助手\n• 植物病害分类 —— Grad-CAM + LLM（91% 准确率）\n• 清冰箱 —— Vibe Coding 一晚出活\n• 还有三个研究项目（PathMNIST / OCTMNIST / 拒识）\n*转圈* 去 /projects 直接玩。" },
+    reply: "项目 ✦\n• 触手可剧 —— 第一人称 AI 互动短剧，抖音黑客松全国三等奖\n• UnNote —— 即时捕获的 AI 待办 Agent\n• 数字人 —— 痴呆症陪伴助手\n• 还有大模型与医学影像研究\n*转圈* 去 /projects 看 Demo。" },
 
   // ── 单个项目 ──────────────────────────────────────────────────────────
   { match: /数字人|digital human|痴呆|陪伴|老人/i,

@@ -321,9 +321,10 @@ export function Internships() {
             ref={videoRef}
             className="trail-video"
             src="/videos/internship-trail/full-loop-v2.mp4"
+            poster="/images/internships/map-animation-frames/01-start-penghui.png"
             muted
             playsInline
-            preload="auto"
+            preload="metadata"
             aria-hidden
           />
 

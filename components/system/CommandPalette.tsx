@@ -102,7 +102,7 @@ export function CommandPalette() {
       },
     ];
 
-    // The four internships — link to the consolidated /experience page with
+    // The five internships — link to the consolidated /experience page with
     // an in-page anchor so the card scrolls into view.
     const internships: CommandAction[] = content.experience
       .filter((e) => !e.slug.startsWith("wku-"))
@@ -162,7 +162,7 @@ export function CommandPalette() {
         kind: "route",
         href: "/experience",
         title: lang === "en" ? "Full experience page" : "完整实习经历",
-        eyebrow: lang === "en" ? "All four internships, stacked" : "四段实习汇总",
+        eyebrow: lang === "en" ? "All five internships, in one trail" : "五段实习汇总",
         icon: <BriefcaseBusiness className="h-4 w-4" />,
       },
       {

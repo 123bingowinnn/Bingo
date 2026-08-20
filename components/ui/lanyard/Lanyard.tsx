@@ -1,6 +1,7 @@
 "use client";
 
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import { Canvas, extend, useFrame, type ThreeEvent } from "@react-three/fiber";
 import { Environment, Lightformer, useGLTF, useTexture } from "@react-three/drei";
 import {
@@ -45,6 +46,7 @@ type BandProps = Pick<
   maxSpeed?: number;
   minSpeed?: number;
   isMobile?: boolean;
+  onReady?: () => void;
 };
 
 type CardModel = {
@@ -95,6 +97,7 @@ function Band({
   imageFit = "cover",
   lanyardImage = null,
   lanyardWidth = 1,
+  onReady,
 }: BandProps) {
   const band = useRef<MeshLineGeometry>(null);
   const fixed = useRef<RapierRigidBody>(null!);
@@ -144,6 +147,10 @@ function Band({
   });
   const [dragged, setDragged] = useState<THREE.Vector3 | false>(false);
   const [hovered, setHovered] = useState(false);
+
+  useEffect(() => {
+    onReady?.();
+  }, [onReady]);
 
   const cardMap = useMemo(() => {
     const baseMap = materials.base.map;
@@ -381,6 +388,7 @@ export default function Lanyard({
   lanyardWidth = 1,
 }: LanyardProps) {
   const [isMobile, setIsMobile] = useState(false);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     const update = () => setIsMobile(window.innerWidth < 768);
@@ -390,7 +398,21 @@ export default function Lanyard({
   }, []);
 
   return (
-    <div className="lanyard-wrapper" aria-label="Interactive profile lanyard">
+    <div
+      className="lanyard-wrapper"
+      data-ready={ready ? "true" : "false"}
+      aria-label="Interactive profile lanyard"
+    >
+      <div className="lanyard-fallback" aria-hidden>
+        <Image
+          src={frontImage || "/images/lanyard/badge-front.png"}
+          alt=""
+          width={800}
+          height={1200}
+          priority
+        />
+        <span>Loading interactive badge...</span>
+      </div>
       <Canvas
         camera={{ position, fov }}
         dpr={[1, isMobile ? 1.5 : 2]}
@@ -407,6 +429,7 @@ export default function Lanyard({
               imageFit={imageFit}
               lanyardImage={lanyardImage}
               lanyardWidth={lanyardWidth}
+              onReady={() => setReady(true)}
             />
           </Physics>
           <Environment blur={0.75}>

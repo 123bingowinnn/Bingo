@@ -126,14 +126,14 @@ const SECTION_LINES = {
   en: {
     hero: "hey there ✦ scroll on",
     about: "the real Bingo lives here",
-    experience: "four internships in one rectangle",
+    experience: "five internships, one winding trail",
     research: "papers — slow + careful",
     contact: "send him a note ↓",
   },
   zh: {
     hero: "嗨 ✦ 往下滑就好",
     about: "真正的 Bingo 住在这里",
-    experience: "四段实习挤在一个矩形里",
+    experience: "五段实习，沿着一条路慢慢展开",
     research: "论文 — 慢慢看",
     contact: "在这里给他留个言 ↓",
   },
