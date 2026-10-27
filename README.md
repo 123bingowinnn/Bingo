@@ -1,6 +1,10 @@
-# Personal Portfolio / Resume Website
+# Bingo · Xubin Sun's portfolio
 
-A premium, bilingual (EN/ZH) portfolio and resume website built with Next.js 14+, TypeScript, TailwindCSS, and Framer Motion. Designed for graduate school applications, internship, and full-time job hunting.
+[Visit the website](https://bingosun.vercel.app/) · [GitHub profile](https://github.com/123bingowinnn)
+
+孙徐斌的个人网站，包含项目、经历与中英文介绍。
+
+A premium, bilingual (EN/ZH) portfolio and resume website built with Next.js 16, TypeScript, TailwindCSS, and Framer Motion. Designed for graduate school applications, internship, and full-time job hunting.
 
 ## Features
 
